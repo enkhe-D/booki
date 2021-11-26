@@ -4,22 +4,21 @@
     box-sizing: border-box;
 }
 
-header{
+#headerCont{
     display: flex;
     flex-wrap:wrap;
     justify-content:space-between
 }
 
-nav a{
+
+
+a{
     color:black;
     text-decoration: none;
 }
 
-nav li{
+li{
     list-style-type:none;
-}
-
-header nav li{
     display: inline;
     border:1px solid black;
 }
@@ -104,25 +103,25 @@ i.fa-search{
     color:#DEEBFF;
     background-color:#0068fc ;
 }
-
+/***********************************************************/
 .hebergements{
     display: flex;
-    border:1px solid green;
+    justify-content: space-between;
 }
 
-.carte{
-    border:red 1px solid;
+.cartes{
     border-radius: 15px;
     background-color: #f2f2f2;
+    border:1px solid black;
 }
 
-.carteElement{
+#carte{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.items{
+#carte .items{
     background-color: white;
     border: black solid 1px;
     border-radius: 30px;
@@ -131,16 +130,30 @@ i.fa-search{
     width:364px;
 }
 
-.items figure{
+#carte .items figure{
     margin:0;
 }
 
-.items img{
+#carte .items img{
     width: 100%;
     height: 209px;
     border-radius: 30px 30px 0 0;
     object-fit: cover;
     padding:1.5%;
+}
+
+.items figcaption h2, .items p{
+    margin:0;
+}
+
+figcaption{
+    padding-left:5%;
+}
+
+/*****************************************************************/
+
+aside#carte .items{
+display: flex;
 }
 
 /*a{

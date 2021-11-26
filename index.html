@@ -9,15 +9,15 @@
     <title>Booki</title>
 </head>
 <body>
-    <header>
-        <p><img src="images/logo/Booki@3x.png" alt="Logo-booki"></p>
-        <nav>
+    <header id="headerCont">
+        <p class="items"><img src="images/logo/Booki@3x.png" alt="Logo-booki"></p>
+        <nav class="items">
             <ul>
                 <li><a href="#heberements">Hébergements</a></li>
                 <li><a href="activites">Activités</a></li>
             </ul>
         </nav>
-        <p>
+        <p class="items">
             <strong>Trouver votre hébergement pour des vacances de rêve</strong><br/>
             En plein centre ville ou en pleine nature
         </p> 
@@ -43,9 +43,9 @@
     </section>
 <!-----hebergement-------------------------------------------------------------------------------------------------------->
     <section class="hebergements" id="hebergements">
-        <div class="carte">
+        <div class="cartes">
             <h1>Hébergements à Marseille</h1>
-            <div class="carteElement">
+            <div id="carte">
                 <div class="items">
                     <figure>
                         <a href="#">
@@ -163,9 +163,10 @@
             <p>Afficher plus</p>
         </div>
 <!--********************************************************-->
-        <div class="carte" id="carteAside">
+        <div class="cartes">
             <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
-            <aside>
+            <aside id="carte">
+
                 <div class="items">
                     <figure>
                         <a href="#">
@@ -173,7 +174,13 @@
                             <figcaption>
                                 <h2>Hôtel Le soleil du matin</h2>
                                 <p>Nuit à partir de 128<span>€</span></p>
-                                <span><i class="fas fa-star"></i></span>
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
                             </figcaption>
                         </a>
                     </figure>
@@ -186,7 +193,13 @@
                             <figcaption>
                                 <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                                 <p>Nuit à partir de 71<span>€</span></p>
-                                <span><i class="fas fa-star"></i></span>
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
                             </figcaption>
                         </a>
                     </figure>
@@ -199,7 +212,13 @@
                             <figcaption>
                                 <h2>Hôtel Tout bleu et Blanc</h2>
                                 <p>Nuit à partir de 68<span>€</span></p>
-                                <span><i class="fas fa-star"></i></span>
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
                             </figcaption>
                         </a>
                     </figure>
@@ -209,10 +228,10 @@
     
     </section>
 <!---------activite------------------------------------------------------------------>
-    <section class="activites" id="activites">
+    <section class="cartes" id="activites">
         <h1>Activités à Marseille</h1>
-        <div class="carte_activite">
 
+        <div id="carte">
             <div class="items">
                 <figure>
                     <a href="#">

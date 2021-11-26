@@ -2,13 +2,157 @@
 *{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+
+nav a{
+    color:black;
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type:none;
+}
+
+header nav li{
+    display: inline;
+    border:1px solid black;
+}
+/****************************************************/
+.recherche{
+    display: flex;
+    flex-flow: wrap column;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.formulaire{
+    height:35px;
+}
+form i{
+    padding:9px;
+}
+
+input[type=search]{
+    border:1px solid #f1f1f1;
+}
+
+input[type=button]{
+    border-radius: 0 10px 10px 0;
+    color:white;
+    background-color: #0068fc;
+    border:none;
+    display: none;
+}
+
+i.fa-map-marker-alt{
+    border-radius:10px 0 0 10px;
+    border:none;
+    background-color: #f2f2f2;
+}
+
+i.fa-search{
+    border: none;
+    border-radius: 10px;
+    background-color: #0068fc;
+    color: white;
+    position: relative;
+    left: -1%;
+}
+
+.filtres{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #f2f2f2;
+    margin-left: 3%;
+    border-radius: 25px
+}
+
+.flt h2{
+    margin: 1%;
+}
+
+.flt i{
+    border-radius: 25px;
+    border: 1px solid #DEEBFF;
+    padding: 8px;
+    margin: -5%;
+    color:#0068fc;
+    background-color:#DEEBFF ;
+}
+
+.flt i:hover{
+    border-radius: 25px;
+    border: 1px solid #DEEBFF;
+    padding: 8px;
+    margin: -5%;
+    color:#DEEBFF;
+    background-color:#0068fc ;
+}
+
+.hebergements{
+    display: flex;
+    border:1px solid green;
+}
+
+.carte{
+    border:red 1px solid;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+
+.carteElement{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.items{
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 30px;
+    box-shadow: 0 2px 13px 0 #b1b1b1;
+    margin:2%;
+    width:364px;
+}
+
+.items figure{
     margin:0;
 }
 
-a{
+.items img{
+    width: 100%;
+    height: 209px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+    padding:1.5%;
+}
+
+/*a{
     color: black;
     text-decoration: none;
 }
+
+nav li{
+    list-style-type: none;
+}
+
+
 
 header{
     display: flex;
@@ -17,11 +161,11 @@ header{
     justify-content:space-between;
 }
 
-header nav, p{
+/*header nav, p{
     margin:0
 }
 
-header nav{
+/*header nav{
     display: flex;
     align-items: center;
     justify-content: end;
@@ -33,18 +177,18 @@ header nav{
     margin-right: 71px;
 }*/
 
-header nav a{
+/*header nav a{
     text-decoration: none;
     color:black;
 }
-header nav li {
+/*header nav li {
     display: inline;
     padding: 23% 22px;
     list-style-type: none;
-    /* margin-left: -25%; */
-}
+     margin-left: -25%; 
+}*/
 
-header nav li:hover {
+/*header nav li:hover {
     padding: 23% 22px;
     list-style-type: none;
     border-top: #0065fc 1px solid;
@@ -52,7 +196,7 @@ header nav li:hover {
 
 /******************************************************************************************/
 
-section.recherche{
+/*section.recherche{
     display: flex;
     flex-wrap: wrap;
     border:1px solid black;
@@ -110,7 +254,7 @@ div.filtres h1{
 
 /*------------------------------------------------------------------------------------------*/
 
-div.filtres .flt{
+/*div.filtres .flt{
     display: flex;
     align-items: center;
     border:1px solid black;
@@ -142,14 +286,14 @@ i.fa-dog{
 
 
 /*************hebergements**********************************************************/
-section.hebergements{
+/*section.hebergements{
     display: flex;
     justify-content: space-between;
 }
 
 /*****************************************************************************************/
 
-div.carte_hebergement{
+/*div.carte_hebergement{
     background-color: #f1f1f1;
     border-radius: 25px;
     margin:2%;
@@ -165,7 +309,7 @@ div.cartes_hebergements{
 
 div.element_hebergement{
     background-color: white;
-    border: green solid 1px;
+    /*border: green solid 1px;*//*
     border-radius: 30px;
     box-shadow: 0 2px 13px 0 #b1b1b1;
     margin:2%;
@@ -194,7 +338,7 @@ figcaption h2, figcaption p, figcaption span.etoile{
 }
 
 /****************aside**********************************************/
-aside{
+/*aside{
     background-color: #f1f1f1;
     border-radius: 25px;
     margin: 2% 2% 0 0%;
@@ -225,10 +369,9 @@ div.element_populaire figure{
     margin:0;
 }
 
-div.element_populaire a{
+/*div.element_populaire a{
     margin:0;
-    display: flex;
-}
+    d*//*
 div.element_populaire img{
     width: 150px;
     height: 202px;
@@ -237,7 +380,7 @@ div.element_populaire img{
     padding: 1.5%;
 }
 /************************************activite**********************************************************/
-div.carte_activite{
+/*div.carte_activite{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -270,6 +413,7 @@ div.element{
     border-radius: 30px;
     box-shadow: 0 2px 13px 0 grey;
     margin:0;
+    margin-bottom:5%;
 }
 
 div.element img{
@@ -279,15 +423,15 @@ div.element img{
 }
 
 /*******************************footer****************************************************************/
-footer{
+/*footer{
     display: flex;
-    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; *//*
     background-color: #f1f1f1;
     justify-content: space-between;
     padding: 1%;
 }
 
-footer nav a{
+/*footer nav a{
     text-decoration: none;
     color:black;
 }
@@ -300,12 +444,12 @@ footer li{
     border:black 1px solid;
 }*/
 
-footer nav ul{
+/*footer nav ul{
     padding:0;
     margin:1% 0;
-}
+}*/
 
-footer div{
+/*footer div{
     width:100%;
 }
 
@@ -326,7 +470,7 @@ footer div{
         justify-content: center;
     }
 
-    header nav {
+    /*header nav {
         display: block;
         border-bottom: black 2px solid;
         width:100%;
@@ -348,9 +492,9 @@ footer div{
         margin: auto;
         border-top:none;
         border-bottom: #0065fc 1px solid;
-    }
+    }*/
 
-    div.carte_hebergement {
+    /*div.carte_hebergement {
     background-color: white;
     border-radius: 0;
     margin: 0;
@@ -371,5 +515,5 @@ footer div{
     aside {
         border-radius:15px ;
     }
-    /*je mets un com*/
-}
+    /*je mets un com*//*
+}*/

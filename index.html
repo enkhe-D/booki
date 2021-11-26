@@ -24,12 +24,11 @@
     </header>
 <!------------------------------------------------------------------------------------------>
 
-
     <section class="recherche">
-        <form action="#">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" placeholder="Marseille, France">
-            <input type="button" value="Rechercher"><i class="fas fa-search"></i>
+        <form action="#" method="POST">
+            <i class="fas fa-map-marker-alt formulaire"></i>
+            <input class="formulaire" type="search" placeholder="Marseille, France">
+            <input class="formulaire"type="button" value="Rechercher"><i class="fas fa-search"></i>
         </form>
 
         <div class="filtres">
@@ -44,11 +43,10 @@
     </section>
 <!-----hebergement-------------------------------------------------------------------------------------------------------->
     <section class="hebergements" id="hebergements">
-        <div class="carte_hebergement">
+        <div class="carte">
             <h1>Hébergements à Marseille</h1>
-            <div class="cartes_hebergements">
-
-                <div class="element_hebergement">
+            <div class="carteElement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -67,7 +65,7 @@
                     </figure>
                 </div>
 
-                <div class="element_hebergement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -86,7 +84,7 @@
                     </figure>
                 </div>
 
-                <div class="element_hebergement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -105,7 +103,7 @@
                     </figure>
                 </div>
 
-                <div class="element_hebergement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -124,7 +122,7 @@
                     </figure>
                 </div>
 
-                <div class="element_hebergement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -143,7 +141,7 @@
                     </figure>
                 </div>
 
-                <div class="element_hebergement">
+                <div class="items">
                     <figure>
                         <a href="#">
                             <img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
@@ -165,47 +163,47 @@
             <p>Afficher plus</p>
         </div>
 <!--********************************************************-->
-        <div class="carte_aside">
+        <div class="carte" id="carteAside">
+            <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
             <aside>
-                <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
-                    <div class="element_populaire">
-                        <figure>
-                            <a href="#">
-                                <img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
-                                <figcaption>
-                                    <h2>Hôtel Le soleil du matin</h2>
-                                    <p>Nuit à partir de 128<span>€</span></p>
-                                    <span><i class="fas fa-star"></i></span>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </div>
+                <div class="items">
+                    <figure>
+                        <a href="#">
+                            <img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
+                            <figcaption>
+                                <h2>Hôtel Le soleil du matin</h2>
+                                <p>Nuit à partir de 128<span>€</span></p>
+                                <span><i class="fas fa-star"></i></span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
 
-                    <div class="element_populaire">
-                        <figure>
-                            <a href="#">
-                                <img src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
-                                <figcaption>
-                                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                                    <p>Nuit à partir de 71<span>€</span></p>
-                                    <span><i class="fas fa-star"></i></span>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </div>
+                <div class="items">
+                    <figure>
+                        <a href="#">
+                            <img src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
+                            <figcaption>
+                                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                                <p>Nuit à partir de 71<span>€</span></p>
+                                <span><i class="fas fa-star"></i></span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
 
-                    <div class="element_populaire">
-                        <figure>
-                            <a href="#">
-                                <img src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
-                                <figcaption>
-                                    <h2>Hôtel Tout bleu et Blanc</h2>
-                                    <p>Nuit à partir de 68<span>€</span></p>
-                                    <span><i class="fas fa-star"></i></span>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </div>
+                <div class="items">
+                    <figure>
+                        <a href="#">
+                            <img src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Votre navigateur ne supporte pas l'image">
+                            <figcaption>
+                                <h2>Hôtel Tout bleu et Blanc</h2>
+                                <p>Nuit à partir de 68<span>€</span></p>
+                                <span><i class="fas fa-star"></i></span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
             </aside>
         </div>
     
@@ -215,7 +213,7 @@
         <h1>Activités à Marseille</h1>
         <div class="carte_activite">
 
-            <div class="element_activite1">
+            <div class="items">
                 <figure>
                     <a href="#">
                         <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
@@ -226,7 +224,7 @@
                 </figure>
             </div>
 
-            <div class="element_activite2">
+            <div class="items">
                 <div class="element">
                     <figure>
                         <a href="#">
@@ -250,7 +248,7 @@
                 </div>
             </div>
 
-            <div class="element_activite3">
+            <div class="items">
                 <figure>
                     <a href="#">
                         <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
@@ -261,7 +259,7 @@
                 </figure>
             </div>
 
-            <div class="element_activite4">
+            <div class="items">
                 <div class="element">
                     <figure>
                         <a href="#">

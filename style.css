@@ -20,13 +20,29 @@ a{
     text-decoration: none;
 }
 
-li{
+a:hover{
+    color:#0068fc;
+    text-decoration: none;
+}
+
+header li{
     list-style-type:none;
-    border:1px solid black;
+    padding:59px;
+}
+
+header li:hover{
+    list-style-type:none;
+    border-top:1px solid #0068fc;
+    padding:59px
 }
 
 #headerCont li{
     display: inline;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
 }
 /****************************************************/
 .recherche{
@@ -109,25 +125,33 @@ i.fa-search{
     color:#DEEBFF;
     background-color:#0068fc ;
 }
+
+.fa-info{
+    border-radius: 50%;
+    border:1px solid #f2f2f2;
+    padding:5px 10px 5px 10px;
+}
 /***********************************************************/
-.hebergements{
+#hebergements{
     display: flex;
     justify-content: space-between;
 }
+/************************************************************/
 
-.cartes{
+
+.hebergement{
     border-radius: 15px;
     background-color: #f2f2f2;
     border:1px solid black;
 }
 
-#carte{
+#items{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-#carte .items{
+#items .carte{
     background-color: white;
     border: black solid 1px;
     border-radius: 30px;
@@ -136,11 +160,11 @@ i.fa-search{
     width:364px;
 }
 
-#carte .items figure{
+#items .carte figure{
     margin:0;
 }
 
-#carte .items img{
+#items .carte img{
     width: 100%;
     height: 209px;
     border-radius: 30px 30px 0 0;
@@ -148,7 +172,7 @@ i.fa-search{
     padding:1.5%;
 }
 
-.items figcaption h2, .items p{
+.carte figcaption h2, .carte p{
     margin:0;
 }
 
@@ -162,10 +186,9 @@ aside#carte .items{
 display: flex;
 }
 /*********************************************************************/
+#activites{
 
-
-
-
+}
 /**********************************************************************/
 
 footer{
@@ -181,6 +204,20 @@ footer div{
 footer h3{
     padding-left: 6.1%;
 }
+
+/******************************************************/
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and(max-width:768px) {
+    #headerCont{
+        justify-content: center;
+    }
+}
+
+
 
 /*a{
     color: black;

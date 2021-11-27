@@ -2,6 +2,7 @@
 *{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin:0;
 }
 
 #headerCont{
@@ -10,7 +11,9 @@
     justify-content:space-between
 }
 
-
+#headerCont .promesse{
+    width:100%;
+}
 
 a{
     color:black;
@@ -19,8 +22,11 @@ a{
 
 li{
     list-style-type:none;
-    display: inline;
     border:1px solid black;
+}
+
+#headerCont li{
+    display: inline;
 }
 /****************************************************/
 .recherche{
@@ -154,6 +160,26 @@ figcaption{
 
 aside#carte .items{
 display: flex;
+}
+/*********************************************************************/
+
+
+
+
+/**********************************************************************/
+
+footer{
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+footer div{
+
+    width:100%;
+}
+
+footer h3{
+    padding-left: 6.1%;
 }
 
 /*a{

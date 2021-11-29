@@ -10,11 +10,11 @@
 </head>
 <body>
     <header id="headerCont">
-        <p><img src="images/logo/Booki@3x.png" alt="Logo-booki"></p>
+        <p class="logo"><img src="images/logo/Booki@3x.png" alt="Logo-booki"></p>
         <nav>
             <ul>
-                <li><a href="#heberements">Hébergements</a></li>
-                <li><a href="activites">Activités</a></li>
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
         <p class="promesse">
@@ -27,7 +27,7 @@
     <section class="recherche">
         <form action="#" method="POST">
             <i class="fas fa-map-marker-alt formulaire"></i>
-            <input class="formulaire" type="search" placeholder="Marseille, France">
+            <input class="formulaire" type="search" placeholder="Rechercher..." value="Marseille, France">
             <input class="formulaire"type="button" value="Rechercher"><i class="fas fa-search"></i>
         </form>
 
@@ -43,9 +43,9 @@
     </section>
 <!-----hebergement-------------------------------------------------------------------------------------------------------->
     <section id="hebergements">
-        <div class="hebergement">
+        <div class="hebergement hebergementCarte">
             <h1>Hébergements à Marseille</h1>
-            <div id="items">
+            <div class="items itemHebergement">
                 <div class="carte">
                     <figure>
                         <a href="#">
@@ -162,10 +162,10 @@
             </div>
             <p>Afficher plus</p>
         </div>
-<!--********************************************************-->
-        <div class="hebergement">
+
+        <div class="hebergement populaireCarte">
             <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
-            <aside id="items">
+            <aside class="items itemPopulaire">
                 <div class="carte">
                     <figure>
                         <a href="#">
@@ -230,11 +230,47 @@
     <section id="activites">
         <h1>Activités à Marseille</h1>
 
-        <div id="items">
-            <div class="carte">
+        <div class="items activiteCarte">
+
+            <div class="carte imgFull">
                 <figure>
                     <a href="#">
                         <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
+                        <figcaption>
+                            <h2>Auberge La Cannebière</h2>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+
+            <div class="cartes">
+                <div class="element">
+                    <figure>
+                        <a href="#">
+                            <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
+                            <figcaption>
+                                <h2>Auberge La Cannebière</h2>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="element">
+                    <figure>
+                        <a href="#">
+                            <img src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
+                            <figcaption>
+                                <h2>Auberge La Cannebière</h2>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="carte imgFull">
+                <figure>
+                    <a href="#">
+                        <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
                         <figcaption>
                             <h2>Auberge La Cannebière</h2>
                         </figcaption>
@@ -246,7 +282,7 @@
                 <div class="element">
                     <figure>
                         <a href="#">
-                            <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
+                            <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
                             <figcaption>
                                 <h2>Auberge La Cannebière</h2>
                             </figcaption>
@@ -257,42 +293,7 @@
                 <div class="element">
                     <figure>
                         <a href="#">
-                            <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
-                            <figcaption>
-                                <h2>Auberge La Cannebière</h2>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="carte">
-                <figure>
-                    <a href="#">
-                        <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
-                        <figcaption>
-                            <h2>Auberge La Cannebière</h2>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-
-            <div class="carte">
-                <div class="element">
-                    <figure>
-                        <a href="#">
-                            <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
-                            <figcaption>
-                                <h2>Auberge La Cannebière</h2>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="element">
-                    <figure>
-                        <a href="#">
-                            <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
+                            <img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"alt="Votre navigateur ne supporte pas l'image">
                             <figcaption>
                                 <h2>Auberge La Cannebière</h2>
                             </figcaption>

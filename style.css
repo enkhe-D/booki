@@ -2,6 +2,7 @@
 *{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin:0;
 }
 
 #headerCont{
@@ -12,7 +13,8 @@
 }
 
 #headerCont .promesse{
-    width:100%;
+    width: 100%;
+    margin-left: 2%;
 }
 
 header nav{
@@ -49,6 +51,7 @@ a:hover{
 .recherche{
     display: flex;
     flex-flow: wrap column;
+    margin-left:2%;
 }
 
 form{
@@ -72,6 +75,10 @@ input[type=button]{
     color:white;
     background-color: #0068fc;
     border:none;
+}
+
+input[type=placeholder]{
+    border:1px solid #f2f2f2;
 }
 
 i.fa-map-marker-alt{
@@ -137,6 +144,7 @@ i.fa-search{
 #hebergements{
     display: flex;
     justify-content: space-between;
+    margin:2%
 }
 /************************************************************/
 
@@ -147,19 +155,15 @@ i.fa-search{
 }
 
 .hebergement h1{
-    padding-left:2%;
+    padding:2%;
 }
 /***********************************************/
-.items{
-
-}
 .carte{
     background-color: white;
-    border: black solid 1px;
     border-radius: 30px;
     box-shadow: 0 2px 13px 0 #b1b1b1;
     margin:2%;
-    width:364px;
+    width:348px;
 }
 
 .carte figure{
@@ -200,6 +204,7 @@ figcaption h2 , figcaption p{
     display: flex;
     flex-direction: column;
     width:30%;
+    margin:auto;
 }
 
 .populaireCarte h1{
@@ -209,6 +214,7 @@ figcaption h2 , figcaption p{
 
 .populaireCarte .carte{
     width:423px;
+    margin:9%;
 }
 
 .itemPopulaire .carte a{
@@ -231,6 +237,10 @@ margin-left:2%;
 display: flex;
 }
 
+.activiteCarte .carte{
+    border:none;
+}
+
 .activiteCarte .carte img{
     padding:0;
 }
@@ -242,6 +252,10 @@ display: flex;
     box-shadow: 0 2px 13px 0 #b1b1b1;
     margin:2%;
     width:364px;
+}
+
+.element figure{
+    margin:0;
 }
 
 .element img{
@@ -259,7 +273,6 @@ display: flex;
 footer{
     display: flex;
     background-color: #f2f2f2;
-    margin:-8px;
 }
 
 footer div{
@@ -285,6 +298,11 @@ footer li{
     #hebergements{
         display: flex;
         flex-direction: column;
+        margin:2% 0;
+    }
+
+    .hebergement{
+        width:100%;
     }
 
     .hebergementCarte{
@@ -292,8 +310,21 @@ footer li{
     }
 
     .populaireCarte {
-        width:90%;
         order:1;
+    }
+
+    .populaireCarte .carte{
+        margin:2%;
+    }
+
+    aside{
+        display: flex;
+    
+    }
+
+    .activiteCarte{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -320,7 +351,14 @@ footer li{
     }
 
     header nav{
-        border-bottom:2px solid #f2f2f2;
+        justify-content: center;
+        border-bottom:3px solid #f2f2f2;
+        width:100%;
+    }
+
+    header nav li:hover{
+        border-bottom:3px solid #0068fc;
+        width:100%;
     }
 
     #hebergements {
@@ -338,7 +376,8 @@ footer li{
     }
 
     .populaireCarte {
-    
+        display: flex;
+        flex-direction: column;
         order:1;
     }
 

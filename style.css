@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Shrikhand&display=swap');
 *{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -46,6 +46,10 @@ a{
 a:hover{
     color:#0068fc;
     text-decoration: none;
+}
+
+.fa-star{
+    color:#0068fc;
 }
 /****************************************************/
 .recherche{
@@ -157,14 +161,10 @@ i.fa-search{
     background-color: #f2f2f2;
     border:1px solid black;
 }
-
-.hebergement h1, .hebergement p {
-    font-size: 100%;
-}
 /***********************************************/
 .carte {
     background-color: white;
-    border-radius: 11px;
+    border-radius: 30px;
     box-shadow: 0 2px 13px 0 #b1b1b1;
 }
 
@@ -174,15 +174,18 @@ i.fa-search{
 
 .carte img {
     width: 100%;
-    height: 94px;
-    border-radius: 11px 11px 0 0;
+    height: 214px;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
     padding: 1.5%;
 }
 
 figcaption {
     padding-left: 5%;
-    font-size: 60%;
+}
+
+.icon{
+    color: #f2f2f2;
 }
 
 figcaption h2 , figcaption p{
@@ -202,17 +205,23 @@ figcaption h2 , figcaption p{
     flex-wrap: wrap;
 }
 .itemHebergement .carte {
-    min-width: 28%;
+    width: 29%;
+    height: 291px;
     margin: 2%;
 }
 
 .itemHebergement {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     background-color: pink;
+    padding: 1%;
 }
 
+.para{
+    font-weight: bold;
+    padding-left:4%;
+}
 /********************************************************************/
 .populaireCarte{
     display: flex;
@@ -223,12 +232,13 @@ figcaption h2 , figcaption p{
 
 .itemPopulaire{
     background-color: pink;
+    border-radius: 30px;
 }
 
 .populaireCarte h1{
     display: flex;
     justify-content: space-between;
-    padding:4%;
+    padding: 4% 7%;
 }
 
 .itemPopulaire .carte{
@@ -241,8 +251,16 @@ figcaption h2 , figcaption p{
 }
 
 .itemPopulaire .carte img {
-    border-radius: 11px 0 0 11px;
-    width: 32%;
+    border-radius: 30px 0 0 30px;
+    width: 39%;
+}
+
+.itemPopulaire figcaption {
+    padding: 5% 5% 0;
+}
+
+.itemPopulaire .etoile{
+    line-height: 4;
 }
 
 
@@ -258,39 +276,21 @@ margin-left:2%;
     margin:2%;
     }
 
-.activiteCarte .carte{
-    border:none;
-    width:15px;
+.activiteCarte .carte {
+    width: 29%;
+    height: 540px;
+    margin: 2%;
 }
 
-.activiteCarte .imgFull img{
-    padding:0;
-    height:25px;
+.activiteCarte .imgG img {
+    padding: 0;
+    height: 488px;
 }
 
-/*.element{
-    background-color: white;
-    border: black solid 1px;
-    border-radius: 11px;
-    box-shadow: 0 2px 13px 0 #b1b1b1;
-    margin:2%;
-    width:364px;
+.activiteCarte .imgP{
+    padding-top:15px;
 }
 
-.element figure{
-    margin:0;
-}
-
-.element img{
-    width: 100%;
-    height: 209px;
-    border-radius: 30px 30px 0 0;
-    object-fit: cover;
-}
-
-.imgFull img{
-    height: 1%;
-}
 /**********************************************************************/
 
 footer{
@@ -349,6 +349,20 @@ footer li{
         order:2;
     }
 
+    .hebergement {
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .itemHebergement figcaption{
+        font-size: 92%;
+    }
+
+    .para {
+        font-weight: bold;
+        padding: 4%;
+    }
+
     .populaireCarte {
         order:1;
     }
@@ -360,7 +374,7 @@ footer li{
     aside {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin: auto auto 4%;
     }
 }
 
@@ -446,14 +460,28 @@ footer li{
         margin-top: 6%;
     }
 
+    .itemHebergement .carte img {
+    width: 100%;
+    height: 134px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+    padding: 1.5%;
+}
+
     .populaireCarte{
         border-radius: 0;
     }
 
     .items{
         display: flex;
+        flex-flow:nowrap column;
         margin:auto;
-        
+
+    }
+
+    .itemHebergement .carte {
+        width: 95%;
+        height:209px
     }
 
     .activiteCarte{

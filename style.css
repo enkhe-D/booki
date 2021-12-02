@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Shrikhand&display=swap');
-*{
+body{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     margin:0;
@@ -108,29 +108,33 @@ i.fa-search{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin:2% 0;
 }
 
-.flt{
+.flt {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid #f2f2f2;
     margin-left: 3%;
-    border-radius: 25px
+    border-radius: 25px;
+    padding: 0px 18px 0 2px;
 }
 
 .flt h2{
     margin: 1%;
 }
 
-.flt i{
+.flt i {
     border-radius: 25px;
     border: 1px solid #DEEBFF;
-    padding: 8px;
+    padding: 9.3px;
     margin: -5%;
-    color:#0068fc;
-    background-color:#DEEBFF ;
+    color: #0068fc;
+    background-color: #DEEBFF;
+}
+
+i.fa-child{
+    padding:9.3px 12px;
 }
 
 .flt i:hover{
@@ -146,7 +150,7 @@ i.fa-search{
     border-radius: 50%;
     border:1px solid #f2f2f2;
     padding:5px 10px 5px 10px;
-    color:#0068fc
+    color:#0068fc;
 }
 /***********************************************************/
 #hebergements{
@@ -173,11 +177,11 @@ i.fa-search{
 }
 
 .carte img {
-    width: 100%;
-    height: 214px;
-    border-radius: 30px 30px 0 0;
+    width: 96%;
+    height: 168px;
+    border-radius: 24px 23px 0 0;
     object-fit: cover;
-    padding: 1.5%;
+    margin: 2%;
 }
 
 figcaption {
@@ -191,31 +195,29 @@ figcaption {
 figcaption h2 , figcaption p{
     margin:0;
 }
+
+.itemPopulaire img.etoile{
+    vertical-align: bottom;
+}
 /*****************************************************************/
 .hebergementCarte{
     width:68%;
 }
 
 .hebergementCarte h1{
-    padding: 2% 5%;
-}
-
-.itemHebergement{
-    display: flex;
-    flex-wrap: wrap;
-}
-.itemHebergement .carte {
-    width: 29%;
-    height: 291px;
-    margin: 2%;
+    padding: 3% 4%;
 }
 
 .itemHebergement {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: pink;
-    padding: 1%;
+}
+
+.itemHebergement .carte {
+    width: 29%;
+    height: 264px;
+    margin: 2% auto;
 }
 
 .para{
@@ -231,7 +233,6 @@ figcaption h2 , figcaption p{
 }
 
 .itemPopulaire{
-    background-color: pink;
     border-radius: 30px;
 }
 
@@ -251,19 +252,14 @@ figcaption h2 , figcaption p{
 }
 
 .itemPopulaire .carte img {
-    border-radius: 30px 0 0 30px;
-    width: 39%;
+    border-radius: 21px 0 0 21px;
+    width: 44%;
+    margin: 1.5%;
 }
 
 .itemPopulaire figcaption {
-    padding: 5% 5% 0;
+    padding: 5% 1% 0;
 }
-
-.itemPopulaire .etoile{
-    line-height: 4;
-}
-
-
 
 /*********************************************************************/
 #activites h1{
@@ -278,7 +274,6 @@ margin-left:2%;
 
 .activiteCarte .carte {
     width: 29%;
-    height: 540px;
     margin: 2%;
 }
 
@@ -289,6 +284,25 @@ margin-left:2%;
 
 .activiteCarte .imgP{
     padding-top:15px;
+}
+
+.cartes{
+    box-shadow: none;
+}
+
+.element{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 13px 0 #b1b1b1;
+}
+
+.element img{
+    padding:0;
+    height:250px;
+}
+
+.elements{
+    margin-top:12%;
 }
 
 /**********************************************************************/

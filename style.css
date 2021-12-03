@@ -58,22 +58,13 @@ a:hover{
     margin-left:2%;
 }
 
+.formulaire {
+    padding:15px;
+}
+
 form{
     display: flex;
     align-items: center;
-}
-
-.formulaire {
-    height: 45px;
-    font-size: 120%;
-}
-
-form i{
-    padding:9px;
-}
-
-input[type=search]{
-    border:1px solid #f1f1f1;
 }
 
 input[type=button]{
@@ -83,9 +74,10 @@ input[type=button]{
     border:none;
 }
 
-input[type=placeholder]{
-    border:1px solid #f2f2f2;
+input[type=search]{
+    border:1px solid #f1f1f1;
 }
+
 
 i.fa-map-marker-alt{
     border-radius:10px 0 0 10px;
@@ -99,9 +91,8 @@ i.fa-search{
     background-color: #0068fc;
     color: white;
     position: relative;
-
     left: -1%;
-    display: none;
+    display:none;
 }
 
 .filtres{
@@ -458,7 +449,6 @@ footer li{
         color: white;
         position: relative;
         left: -2%;
-        font-size: 158%;
         display: flex;
     }
 

@@ -134,6 +134,7 @@ div.carte{
     border:1px solid red;
     margin:2% auto;
     border-radius:30px;
+    background-color: white;
 }
 
 figure{
@@ -156,8 +157,12 @@ figcaption h2{
     margin-top:0;
 }
 
-.fa-star{
+i.fas.fa-star{
     color:#0068fc;
+}
+
+i.fas.fa-star.icon{
+    color:#f2f2f2
 }
 
 /********************************************************************/
@@ -187,13 +192,15 @@ div.items.activiteCarte{
 
 footer{
     display: flex;
-    border:1px solid red;
     background-color: #f2f2f2;
     margin:0;
 }
 
+footer nav{
+    line-height: 2;
+}
+
 footer div{
-    border:1px solid black;
     width:100%
 }
 

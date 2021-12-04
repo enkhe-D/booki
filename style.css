@@ -5,14 +5,15 @@ body{
     margin:0;
 }
 
-#headerCont{
+header {
     display: flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    margin-top:0;
+    justify-content: space-between;
+    align-items:center;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
-#headerCont .promesse{
+p.promesse{
     width: 100%;
     margin: 0 2% 1%;
 }
@@ -22,13 +23,13 @@ header nav{
     align-items: center;
 }
 
-header nav ul{
+header ul{
     display: flex;
-    margin:0;
+    list-style: none;
+    margin-top:0;
 }
 
 header li{
-    list-style-type:none;
     padding:76px;
 }
 
@@ -48,116 +49,163 @@ a:hover{
     text-decoration: none;
 }
 
-.fa-star{
-    color:#0068fc;
-}
-/****************************************************/
-.recherche{
-    display: flex;
-    flex-flow: wrap column;
-    margin-left:2%;
-}
-
-.formulaire {
-    padding:15px;
-}
-
 form{
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
+    width:17%;
 }
 
-input[type=button]{
-    border-radius: 0 10px 10px 0;
-    color:white;
-    background-color: #0068fc;
-    border:none;
-}
-
-input[type=search]{
-    border:1px solid #f1f1f1;
-}
-
-
-i.fa-map-marker-alt{
-    border-radius:10px 0 0 10px;
+.formulaire{
+    padding:15px;
     border:1px solid #f2f2f2;
-    background-color: #f2f2f2;
 }
 
-i.fa-search{
-    border: 1px solid #0068fc;
-    border-radius: 10px;
+i.fas.fa-map-marker-alt.formulaire{
+border-radius:15px 0 0 15px;
+background-color: #f2f2f2;
+}
+
+input[type="button"]{
+border-radius: 0 15px 15px 0;
+color:white;
+background-color: #0068fc;
+}
+
+i.fas.fa-search.formulaire{
+    border-radius: 15px;
     background-color: #0068fc;
-    color: white;
+    color:white;
     position: relative;
-    left: -1%;
-    display:none;
+    left:-13px;
+    display: none;
 }
 
-.filtres{
+div.filtres, div.flt{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.flt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid #f2f2f2;
-    margin-left: 3%;
-    border-radius: 25px;
-    padding: 0px 18px 0 2px;
-}
-
-.flt h2{
-    margin: 1%;
-}
-
-.flt i {
-    border-radius: 25px;
-    border: 1px solid #DEEBFF;
-    padding: 9.3px;
-    margin: -5%;
-    color: #0068fc;
-    background-color: #DEEBFF;
-}
-
-i.fa-child{
-    padding:9.3px 12px;
-}
-
-.flt i:hover{
-    border-radius: 25px;
-    border: 1px solid #DEEBFF;
-    padding: 8px;
-    margin: -5%;
-    color:#DEEBFF;
-    background-color:#0068fc ;
-}
-
-.fa-info{
-    border-radius: 50%;
+div.flt{
     border:1px solid #f2f2f2;
-    padding:5px 10px 5px 10px;
+    margin-left:2%;
+    border-radius:22px;
+    flex-wrap: nowrap;
+}
+
+div.flt h2{
+    margin:0;
+    padding:0 10px;
+}
+
+div.flt i{
+    border:#DEEBFF 1px solid;
+    border-radius: 25px;
+    padding:12px;
+    background-color:#DEEBFF ;
+    color: #0068fc;
+    margin-left:-3px;
+}
+
+i.fas.fa-info{
+    border:1px solid #f2f2f2;
+    border-radius: 20px;
+    padding:5px 10px;
     color:#0068fc;
 }
-/***********************************************************/
-#hebergements{
+
+section#hebergements{
     display: flex;
     justify-content: space-between;
-    margin:2%
 }
-/************************************************************/
 
-.hebergement{
-    border-radius: 15px;
+div.hebergement{
+    border-radius: 30px;
     background-color: #f2f2f2;
     border:1px solid black;
 }
+
+div.items.itemHebergement{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.carte{
+    border:1px solid red;
+    margin:2% auto;
+    border-radius:30px;
+}
+
+figure{
+    margin:0;
+}
+
+img {
+    width: 400px;
+    height: 214px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+    padding:7px;
+}
+
+figcaption{
+    padding-left:33px;
+}
+
+figcaption h2{
+    margin-top:0;
+}
+
+.fa-star{
+    color:#0068fc;
+}
+
+/********************************************************************/
+
+.itemPopulaire a{
+    display: flex;
+}
+
+.itemPopulaire .carte{
+    border: 1px solid red;
+    margin: 7%;
+    border-radius: 30px;
+}
+
+.itemPopulaire img{
+    border-radius: 30px 0 0 30px;
+    width:250px;
+}
+
+/*****************************************************************************/
+div.items.activiteCarte{
+    display: flex;
+}
+.activiteCarte img{
+    padding:0;
+}
+
+footer{
+    display: flex;
+    border:1px solid red;
+    background-color: #f2f2f2;
+    margin:0;
+}
+
+footer div{
+    border:1px solid black;
+    width:100%
+}
+
+footer li{
+    list-style: none;
+}
+
+footer h3{
+    padding-left:39px;
+}
 /***********************************************/
-.carte {
+/*.carte {
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 2px 13px 0 #b1b1b1;
@@ -191,7 +239,7 @@ figcaption h2 , figcaption p{
     vertical-align: bottom;
 }
 /*****************************************************************/
-.hebergementCarte{
+/*.hebergementCarte{
     width:68%;
 }
 
@@ -216,7 +264,7 @@ figcaption h2 , figcaption p{
     padding-left:4%;
 }
 /********************************************************************/
-.populaireCarte{
+/*.populaireCarte{
     display: flex;
     flex-direction: column;
     width:30%;
@@ -252,7 +300,7 @@ figcaption h2 , figcaption p{
     padding: 5% 1% 0;
 }
 
-/*********************************************************************/
+/*********************************************************************//*
 #activites h1{
 margin-left:2%;
 }
@@ -265,12 +313,15 @@ margin-left:2%;
 
 .activiteCarte .carte {
     width: 29%;
-    margin: 2%;
 }
 
 .activiteCarte .imgG img {
-    padding: 0;
     height: 488px;
+}
+
+.activiteCarte img{
+    margin:0;
+    width:100%;
 }
 
 .activiteCarte .imgP{
@@ -296,7 +347,7 @@ margin-left:2%;
     margin-top:12%;
 }
 
-/**********************************************************************/
+/**********************************************************************//*
 
 footer{
     display: flex;
@@ -316,7 +367,7 @@ footer li{
     list-style-type: none;
 }
 
-/******************************************************/
+/******************************************************//*
 
 @media screen and (max-width:992px){
     body{
@@ -499,4 +550,4 @@ footer li{
     footer h3 {
         padding-left: 5.1%;
     }
-}
+}*/

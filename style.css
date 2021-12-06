@@ -129,7 +129,6 @@ section#hebergements{
 div.hebergement{
     border-radius: 30px;
     background-color: #f2f2f2;
-    border:1px solid black;
 }
 
 div.hebergement.hebergementCarte{
@@ -142,10 +141,10 @@ div.items.itemHebergement{
 }
 
 div.carte {
-    border: 1px solid red;
     margin: 2% auto;
     border-radius: 30px;
     background-color: white;
+    box-shadow: 0 2px 13px 0 #b1b1b1;
 }
 
 figure{
@@ -159,7 +158,8 @@ img {
 }
 
 figcaption{
-    padding-left:33px;
+    padding-left:25px;
+    margin: 2% auto;
 }
 
 figcaption h2{
@@ -193,21 +193,23 @@ div.hebergement.populaireCarte{
 .itemPopulaire a{
     display: flex;
 }
-
-.itemPopulaire .carte {
-    border: 1px solid red;
-    margin: 8%;
-    width: 80%;
-    /* height: 250px; */
-    border-radius: 30px;
-    background-color: white;
-}
 .itemPopulaire img {
     border-radius: 30px 0 0 30px;
-    width: 289px;
+    width: 40%;
+    padding: 1.5% 0;
     height: 250px;
 }
 
+.itemPopulaire .carte {
+    margin: 8%;
+    width: 85%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+p.etoile{
+    vertical-align: bottom;
+}
 /*****************************************************************************/
 section#activites{
     margin:2%;
@@ -216,9 +218,44 @@ section#activites{
 div.items.activiteCarte{
     display: flex;
 }
-.activiteCarte img{
-    padding:0;
+
+.activiteCarte .carte{
+    width:21%;
 }
+.activiteCarte img{
+    height:250px;
+}
+
+.activiteCarte figure{
+    margin:0;
+}
+
+.activiteCarte .imgG img {
+    height: 562px;
+}
+
+
+#cartes{
+    box-shadow: none;
+}
+
+.element {
+    border-radius: 30px;
+    height: 287px;
+    box-shadow: 0 2px 13px 0 #b1b1b1;
+}
+
+.element img {
+    height: 216px;
+}
+
+.elements {
+    margin-top: 54px;
+}
+/*.elements img{
+    height:250px;
+}*/
+/***********************************************************************************/
 
 footer{
     display: flex;
@@ -254,11 +291,24 @@ footer h3{
 
     div.hebergement.populaireCarte {
         width: 100%;
-        order:1
+        order:1;
+        margin-bottom:30px;
     }
 
     aside.items.itemPopulaire{
         display: flex;
+    }
+    .itemPopulaire .carte{
+        margin:2%;
+    }
+
+    div.items.activiteCarte {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activiteCarte .carte {
+        width: 43%;
     }
 }
 

@@ -53,8 +53,8 @@ a:hover{
 
 form{
     display: flex;
-    /*align-items: center;*/
     width:17%;
+    margin-bottom: 2%;
 }
 
 .formulaire{
@@ -142,15 +142,6 @@ div.hebergement{
     background-color: #f2f2f2;
 }
 
-div.hebergement.hebergementCarte{
-    width:68%;
-}
-
-div.items.itemHebergement{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 div.carte {
     margin: 2% auto;
     border-radius: 30px;
@@ -176,7 +167,11 @@ figcaption{
 }
 
 figcaption h2{
-    margin-top:0;
+    margin:0;
+}
+
+span.prix{
+    font-weight: bold;
 }
 
 i.fas.fa-star{
@@ -188,6 +183,14 @@ i.fas.fa-star.icon{
 }
 
 /********************************************************************/
+div.hebergement.hebergementCarte{
+    width:68%;
+}
+
+div.items.itemHebergement{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .itemHebergement .carte{
     width:30%;
@@ -197,13 +200,12 @@ i.fas.fa-star.icon{
     height:171px;
 }
 
-.hebergementCarte h1{
-    padding:0 2%;
+.hebergementCarte h1, .para{
+    padding:0 4%;
 }
 
 .para{
     font-weight: bold;
-    padding:0 2%;
 }
 /********************************************************************/
 
@@ -222,9 +224,9 @@ div.hebergement.populaireCarte{
 }
 .itemPopulaire img {
     border-radius: 30px 0 0 30px;
-    width: 40%;
+    width: 156px;
+    height: 192px;
     padding: 1.5% 0;
-    height: 182px;
 }
 
 .itemPopulaire .carte {
@@ -259,6 +261,10 @@ div.items.activiteCarte{
 
 .activiteCarte figure{
     margin:0;
+}
+
+.activiteCarte figcaption{
+    margin:2% auto;
 }
 
 .activiteCarte .imgG img {
@@ -397,25 +403,27 @@ footer h3{
         margin:auto;
     }
 
-    div.items.itemHebergement{
+    div.items.itemHebergement, aside.items.itemPopulaire, aside.items.itemPopulaire{
         flex-direction: column;
     }
 
     .itemHebergement .carte{
         width:90%;
     }
-
-    aside.items.itemPopulaire{
-        flex-direction: column;
-    }
-
-    div.items.activiteCarte{
-        flex-direction: column;
+    
+    .itemPopulaire .carte {
+        margin: 2% auto;
     }
 
     .activiteCarte .carte{
         width:90%;
     }
+
+    .activiteCarte .imgG img {
+        height: 250px;
+    }
+
+
 
     footer{
         flex-direction: column;

@@ -49,6 +49,8 @@ a:hover{
     text-decoration: none;
 }
 
+/*******************************************************/
+
 form{
     display: flex;
     /*align-items: center;*/
@@ -111,6 +113,15 @@ div.flt i{
     margin-left:-3px;
 }
 
+div.flt i:hover{
+    border:#DEEBFF 1px solid;
+    border-radius: 25px;
+    padding:12px;
+    background-color:#0068fc ;
+    color: #DEEBFF;
+    margin-left:-3px;
+}
+
 i.fas.fa-info{
     border:1px solid #f2f2f2;
     border-radius: 20px;
@@ -157,9 +168,11 @@ img {
     border-radius: 30px 30px 0 0;
 }
 
+
+
 figcaption{
     padding-left:25px;
-    margin: 2% auto;
+    margin:auto;
 }
 
 figcaption h2{
@@ -181,13 +194,27 @@ i.fas.fa-star.icon{
 }
 
 .itemHebergement img{
-    height:250px;
+    height:171px;
 }
 
+.hebergementCarte h1{
+    padding:0 2%;
+}
+
+.para{
+    font-weight: bold;
+    padding:0 2%;
+}
 /********************************************************************/
 
 div.hebergement.populaireCarte{
     width:30%;
+}
+
+.populaireCarte h1{
+    display: flex;
+    justify-content: space-between;
+    padding:0 9%;
 }
 
 .itemPopulaire a{
@@ -197,7 +224,7 @@ div.hebergement.populaireCarte{
     border-radius: 30px 0 0 30px;
     width: 40%;
     padding: 1.5% 0;
-    height: 250px;
+    height: 182px;
 }
 
 .itemPopulaire .carte {
@@ -207,8 +234,12 @@ div.hebergement.populaireCarte{
     background-color: white;
 }
 
+.itemPopulaire figcaption{
+    margin:2% auto
+}
+
 p.etoile{
-    vertical-align: bottom;
+    margin:0;
 }
 /*****************************************************************************/
 section#activites{
@@ -252,9 +283,6 @@ div.items.activiteCarte{
 .elements {
     margin-top: 54px;
 }
-/*.elements img{
-    height:250px;
-}*/
 /***********************************************************************************/
 
 footer{
@@ -311,6 +339,92 @@ footer h3{
         width: 43%;
     }
 }
+
+@media screen and (max-width:768px){
+    p.logo{
+        margin:auto;
+    }
+
+    p.promesse {
+        border-top: 2px solid #f2f2f2;
+        padding: 20px;
+        margin:0;
+    }
+
+    header nav{
+        width:100%;
+    }
+
+    header ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li {
+        padding: 0px 140px 0 140px;
+    }
+
+    header li:hover {
+        list-style-type: none;
+        border-bottom: 1px solid #0068fc;
+        border-top: none;
+        padding: 0px 140px 0 140px;
+    }
+    input[type="button"]{
+        border-radius: 0 15px 15px 0;
+        color:white;
+        background-color: #0068fc;
+        display: none;
+        }
+        
+    i.fas.fa-search.formulaire{
+        border-radius: 15px;
+        background-color: #0068fc;
+        color:white;
+        position: relative;
+        left:-13px;
+        display: flex;
+    }
+
+    section#hebergements{
+        margin:0;
+    }
+
+    div.hebergement{
+        border-radius:0;
+        margin:auto;
+    }
+
+    div.items.itemHebergement{
+        flex-direction: column;
+    }
+
+    .itemHebergement .carte{
+        width:90%;
+    }
+
+    aside.items.itemPopulaire{
+        flex-direction: column;
+    }
+
+    div.items.activiteCarte{
+        flex-direction: column;
+    }
+
+    .activiteCarte .carte{
+        width:90%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+
+}
+
+
 
 
 /*.carte {

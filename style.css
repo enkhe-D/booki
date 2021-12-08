@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Shrikhand&display=swap');
-body{
+*{
     font-family: 'Raleway', sans-serif;
+}
+
+body{
     box-sizing: border-box;
     margin:0;
+}
+
+.logo {
+    width: 8%;
+    margin: 0 2%;
 }
 
 header {
@@ -71,6 +79,11 @@ input[type="button"]{
 border-radius: 0 15px 15px 0;
 color:white;
 background-color: #0068fc;
+border:#0068fc;
+}
+
+input{
+    font-weight: bold;
 }
 
 i.fas.fa-search.formulaire{
@@ -111,6 +124,14 @@ div.flt i{
     background-color:#DEEBFF ;
     color: #0068fc;
     margin-left:-3px;
+}
+
+i.fas.fa-child{
+    padding:12px 14px
+}
+
+i.fas.fa-child:hover{
+    padding:12px 14px
 }
 
 div.flt i:hover{
@@ -211,6 +232,12 @@ div.items.itemHebergement{
 
 div.hebergement.populaireCarte{
     width:30%;
+    margin:auto;
+}
+
+aside.items.itemPopulaire{
+    display: flex;
+    flex-direction: column;
 }
 
 .populaireCarte h1{
@@ -224,13 +251,11 @@ div.hebergement.populaireCarte{
 }
 .itemPopulaire img {
     border-radius: 30px 0 0 30px;
-    width: 156px;
-    height: 192px;
-    padding: 1.5% 0;
+    width: 164px;
+    height: 200px;
 }
 
 .itemPopulaire .carte {
-    margin: 8%;
     width: 85%;
     border-radius: 30px;
     background-color: white;
@@ -250,10 +275,12 @@ section#activites{
 
 div.items.activiteCarte{
     display: flex;
+    justify-content: space-between;
 }
 
 .activiteCarte .carte{
     width:21%;
+    margin:0;
 }
 .activiteCarte img{
     height:250px;
@@ -315,6 +342,9 @@ footer h3{
 /***********************************************/
 
 @media screen and (max-width:992px){
+    body{
+        background-color: rgb(181, 218, 205);
+    }
     section#hebergements{
         flex-direction: column;
     }
@@ -323,16 +353,22 @@ footer h3{
         order:2;
     }
 
+    .itemHebergement .carte {
+        width: 38%;
+    }
+
     div.hebergement.populaireCarte {
         width: 100%;
         order:1;
         margin-bottom:30px;
     }
 
-    aside.items.itemPopulaire{
-        display: flex;
-    }
     .itemPopulaire .carte{
+        width:62%;
+        margin:5% auto;
+    }
+
+    .itemPopulaire figcaption{
         margin:2%;
     }
 
@@ -343,12 +379,18 @@ footer h3{
 
     .activiteCarte .carte {
         width: 43%;
+        margin:3% 0;
     }
 }
 
 @media screen and (max-width:768px){
-    p.logo{
-        margin:auto;
+    body{
+        background-color: rgb(224, 193, 193);
+    }
+
+    p.logo {
+        width: 21%;
+        margin: auto;
     }
 
     p.promesse {
@@ -359,6 +401,7 @@ footer h3{
 
     header nav{
         width:100%;
+        justify-content: center;
     }
 
     header ul {
@@ -423,361 +466,9 @@ footer h3{
         height: 250px;
     }
 
-
-
     footer{
         flex-direction: column;
     }
 
 
 }
-
-
-
-
-/*.carte {
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 2px 13px 0 #b1b1b1;
-}
-
-.carte figure{
-    margin:0;
-}
-
-.carte img {
-    width: 96%;
-    height: 168px;
-    border-radius: 24px 23px 0 0;
-    object-fit: cover;
-    margin: 2%;
-}
-
-figcaption {
-    padding-left: 5%;
-}
-
-.icon{
-    color: #f2f2f2;
-}
-
-figcaption h2 , figcaption p{
-    margin:0;
-}
-
-.itemPopulaire img.etoile{
-    vertical-align: bottom;
-}
-/*****************************************************************/
-/*.hebergementCarte{
-    width:68%;
-}
-
-.hebergementCarte h1{
-    padding: 3% 4%;
-}
-
-.itemHebergement {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.itemHebergement .carte {
-    width: 29%;
-    height: 264px;
-    margin: 2% auto;
-}
-
-.para{
-    font-weight: bold;
-    padding-left:4%;
-}
-/********************************************************************/
-/*.populaireCarte{
-    display: flex;
-    flex-direction: column;
-    width:30%;
-    
-}
-
-.itemPopulaire{
-    border-radius: 30px;
-}
-
-.populaireCarte h1{
-    display: flex;
-    justify-content: space-between;
-    padding: 4% 7%;
-}
-
-.itemPopulaire .carte{
-    margin:6%;
-}
-
-
-.itemPopulaire .carte a{
-    display: flex;
-}
-
-.itemPopulaire .carte img {
-    border-radius: 21px 0 0 21px;
-    width: 44%;
-    margin: 1.5%;
-}
-
-.itemPopulaire figcaption {
-    padding: 5% 1% 0;
-}
-
-/*********************************************************************//*
-#activites h1{
-margin-left:2%;
-}
-
-.activiteCarte{
-    display: flex;
-    justify-content: space-between;
-    margin:2%;
-    }
-
-.activiteCarte .carte {
-    width: 29%;
-}
-
-.activiteCarte .imgG img {
-    height: 488px;
-}
-
-.activiteCarte img{
-    margin:0;
-    width:100%;
-}
-
-.activiteCarte .imgP{
-    padding-top:15px;
-}
-
-.cartes{
-    box-shadow: none;
-}
-
-.element{
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 2px 13px 0 #b1b1b1;
-}
-
-.element img{
-    padding:0;
-    height:250px;
-}
-
-.elements{
-    margin-top:12%;
-}
-
-/**********************************************************************//*
-
-footer{
-    display: flex;
-    background-color: #f2f2f2;
-}
-
-footer div{
-    line-height: 2;
-    width:100%;
-}
-
-footer h3{
-    padding-left: 6.1%;
-}
-
-footer li{
-    list-style-type: none;
-}
-
-/******************************************************//*
-
-@media screen and (max-width:992px){
-    body{
-        background-color:rgb(106, 150, 106);
-    }
-
-    header nav ul {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-
-    header li {
-        list-style-type: none;
-        padding: 60px;
-        
-    }
-
-    header li:hover {
-        list-style-type: none;
-        padding: 60px;
-    }
-
-    #hebergements{
-        display: flex;
-        flex-direction: column;
-        margin:2% 0;
-    }
-
-    .hebergement{
-        width:100%;
-    }
-
-    .hebergementCarte{
-        order:2;
-    }
-
-    .hebergement {
-        width: 100%;
-        margin-top: 4%;
-    }
-
-    .itemHebergement figcaption{
-        font-size: 92%;
-    }
-
-    .para {
-        font-weight: bold;
-        padding: 4%;
-    }
-
-    .populaireCarte {
-        order:1;
-    }
-
-    .populaireCarte .carte{
-        margin:2%;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        margin: auto auto 4%;
-    }
-}
-
-@media screen and (max-width:768px){
-    body{
-        background-color:rgb(161, 125, 140);
-        width:100%
-    }
-
-    header{
-        justify-content: center;
-    }
-
-    header li:hover{
-        list-style-type:none;
-        border-top:0;
-        border-bottom:1px solid #0068fc;
-        padding:60px
-    }
-
-    .logo{
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav{
-        justify-content: center;
-        border-bottom:3px solid #f2f2f2;
-        width:100%;
-    }
-
-    header nav li:hover{
-        border-bottom:3px solid #0068fc;
-        width:100%;
-    }
-
-    #headerCont .promesse {
-        width: 100%;
-        margin: 5% 1%;
-    }
-
-    .filtres h1{
-        width:100%;
-        padding: 2% 0;
-    }
-
-    .flt {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 2px solid #f2f2f2;
-        margin: 3%;
-        border-radius: 25px;
-    }
-
-    input[type=button]{
-        border-radius: 0 10px 10px 0;
-        color:white;
-        background-color: #0068fc;
-        border:none;
-        display: none;
-    }
-
-    i.fa-search{
-        border-radius: 10px;
-        background-color: #0068fc;
-        color: white;
-        position: relative;
-        left: -2%;
-        display: flex;
-    }
-
-    #hebergements {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .hebergementCarte {
-        background-color: white;
-        border-radius: 0;
-        margin-top: 6%;
-    }
-
-    .itemHebergement .carte img {
-    width: 100%;
-    height: 134px;
-    border-radius: 30px 30px 0 0;
-    object-fit: cover;
-    padding: 1.5%;
-}
-
-    .populaireCarte{
-        border-radius: 0;
-    }
-
-    .items{
-        display: flex;
-        flex-flow:nowrap column;
-        margin:auto;
-
-    }
-
-    .itemHebergement .carte {
-        width: 95%;
-        height:209px
-    }
-
-    .activiteCarte{
-        flex-direction: column;
-    }
-
-    footer{
-        display: block;
-    }
-
-    footer h3 {
-        padding-left: 5.1%;
-    }
-}*/

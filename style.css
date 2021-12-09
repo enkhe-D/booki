@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Shrikhand&display=swap');
 *{
     font-family: 'Raleway', sans-serif;
-}
-
-body{
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
     box-sizing: border-box;
     margin:0;
 }
 
-.logo {
+p.logo {
     width: 8%;
     margin: 0 2%;
 }
@@ -21,9 +21,9 @@ header {
     flex-wrap: wrap;
 }
 
-p.promesse{
+div.promesse{
     width: 100%;
-    margin: 0 2% 1%;
+    margin: 0 2%;
 }
 
 header nav{
@@ -33,23 +33,16 @@ header nav{
 
 header ul{
     display: flex;
-    list-style: none;
     margin-top:0;
 }
 
 header li{
-    padding:76px;
+    padding:46px 28px;
 }
 
 header li:hover{
-    list-style-type:none;
     border-top:1px solid #0068fc;
-    padding:76px
-}
-
-a{
-    color:black;
-    text-decoration: none;
+    padding:46px 28px;
 }
 
 a:hover{
@@ -143,6 +136,10 @@ div.flt i:hover{
     margin-left:-3px;
 }
 
+p.info{
+    margin:2% 0;
+}
+
 i.fas.fa-info{
     border:1px solid #f2f2f2;
     border-radius: 20px;
@@ -206,6 +203,7 @@ i.fas.fa-star.icon{
 /********************************************************************/
 div.hebergement.hebergementCarte{
     width:68%;
+    padding:2%;
 }
 
 div.items.itemHebergement{
@@ -221,9 +219,9 @@ div.items.itemHebergement{
     height:171px;
 }
 
-.hebergementCarte h1, .para{
+/*.hebergementCarte h1, .para{
     padding:0 4%;
-}
+}*/
 
 .para{
     font-weight: bold;
@@ -232,7 +230,7 @@ div.items.itemHebergement{
 
 div.hebergement.populaireCarte{
     width:30%;
-    margin:auto;
+    padding:2%;
 }
 
 aside.items.itemPopulaire{
@@ -321,11 +319,11 @@ div.items.activiteCarte{
 footer{
     display: flex;
     background-color: #f2f2f2;
-    margin:0;
+    padding:2% 0;
 }
 
 footer nav{
-    line-height: 2;
+    line-height: 1.5;
 }
 
 footer div{
@@ -338,6 +336,7 @@ footer li{
 
 footer h3{
     padding-left:39px;
+    line-height: 3;
 }
 /***********************************************/
 
@@ -389,11 +388,11 @@ footer h3{
     }
 
     p.logo {
-        width: 21%;
+        width: 100%;
         margin: auto;
     }
 
-    p.promesse {
+    div.promesse {
         border-top: 2px solid #f2f2f2;
         padding: 20px;
         margin:0;
@@ -412,14 +411,13 @@ footer h3{
     }
 
     header li {
-        padding: 0px 140px 0 140px;
+        padding:0 28px;
     }
 
     header li:hover {
-        list-style-type: none;
         border-bottom: 1px solid #0068fc;
         border-top: none;
-        padding: 0px 140px 0 140px;
+        padding:0 28px;
     }
     input[type="button"]{
         border-radius: 0 15px 15px 0;

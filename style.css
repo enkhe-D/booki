@@ -10,13 +10,26 @@ body{
     margin:0;
 }
 
+a{
+    color: black;
+}
+
+a:hover{
+    color:#0068fc;
+}
+
+h1{
+    padding-left:2%;
+}
+
+/*****************************HEADER*************************************/
+
 header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     border:1px solid;
-    margin:0 2%
 }
 
 .item-2 ul{
@@ -33,24 +46,16 @@ header{
     padding:53px 28px;
 }
 
-a{
-    color: black;
-}
-
-a:hover{
-    color:#0068fc;
-}
-
 p.item-3{
     width:100%;
 }
 
-/*******************************************************/
+/*****************************SECTION SEARCH*************************************/
 
 form{
     display: flex;
     width:17%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .formulaire{
@@ -83,16 +88,14 @@ i.fas.fa-search.formulaire{
     display: none;
 }
 
-section.recherche{
-    margin:2%;
-}
-
 div.filtres, div.flt{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-
+div.filtres h1{
+    padding:0;
+}
 div.flt{
     border:1px solid #f2f2f2;
     margin-left:2%;
@@ -139,20 +142,21 @@ i.fas.fa-info{
 }
 
 /******************************************************************************/
+header, section#hebergements, section.recherche{
+    margin:0 2%;}
+
+/*****************************************************************************/
 
 #hebergements{
-    border:1px solid black;
     display: flex;
     justify-content: space-between;
-    padding:1%;
 }
 
-.hebergement{
-    border:1px solid green;
+section.hebergement{
     background-color: #f2f2f2;
     border-radius: 30px;
-    padding:1%;
-    margin:1%;
+    margin:0;
+    padding:0;
 }
 
 .cards{
@@ -195,6 +199,12 @@ div.card.cardAside{
     margin:5%;
 }
 
+section.hebergement.section-2 h1{
+    display: flex;
+    justify-content: space-between;
+    padding:0 6% 0 6%;
+}
+
 div.cardAside a{
     display: flex;
 }
@@ -212,7 +222,7 @@ p.more{
 }
 
 .section-1{
-    width:77%
+    width:68%
 }
 
 .section-2{
@@ -221,54 +231,6 @@ p.more{
 
 figcaption{
     padding: 0 0 5% 5%;
-}
-
-figcaption h2{
-    margin:0;
-}
-
-i.fas.fa-star{
-    color:#0068fc;
-}
-
-i.fas.fa-star.icon{
-    color:#f2f2f2
-}
-/**********************************************************//*
-
-section#hebergements{
-    display: flex;
-    justify-content: space-between;
-    margin:2%;
-}
-
-section.hebergement{
-    border-radius: 30px;
-    background-color: #f2f2f2;
-}
-
-div.carte {
-    margin: 2% auto;
-    border-radius: 30px;
-    background-color: white;
-    box-shadow: 0 2px 13px 0 #b1b1b1;
-}
-
-figure{
-    margin:1.5%;
-}
-
-img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px 30px 0 0;
-}
-
-
-
-figcaption{
-    padding-left:25px;
-    margin:auto;
 }
 
 figcaption h2{
@@ -286,103 +248,32 @@ i.fas.fa-star{
 i.fas.fa-star.icon{
     color:#f2f2f2
 }
-
-/********************************************************************//*
-div.hebergement.hebergementCarte{
-    width:68%;
-    padding:2%;
-}
-
-div.items.itemHebergement{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.itemHebergement .carte{
-    width:30%;
-}
-
-.itemHebergement img{
-    height:171px;
-}
-
-/*.hebergementCarte h1, .para{
-    padding:0 4%;
-}*/
-
-/*.para{
-    font-weight: bold;
-    padding:3%;
-}
-/********************************************************************//*
-
-div.hebergement.populaireCarte{
-    width:30%;
-    padding:2%;
-}
-
-aside.items.itemPopulaire{
-    display: flex;
-    flex-direction: column;
-    padding:2%;
-}
-
-.populaireCarte h1{
-    display: flex;
-    justify-content: space-between;
-    padding:0 9%;
-}
-
-.itemPopulaire a{
-    display: flex;
-}
-.itemPopulaire img {
-    border-radius: 30px 0 0 30px;
-    width: 164px;
-    height: 200px;
-}
-
-.itemPopulaire .carte {
-    width: 85%;
-    border-radius: 30px;
-    background-color: white;
-}
-
-.itemPopulaire figcaption{
-    margin:2% auto
-}
 /*****************************************************************************/
 section#activites{
-    margin:2%;
-}
-
-section#activites h1{
-    padding:2% 0
-}
-
-div.items.activiteCarte{
-    display: flex;
-    justify-content: space-between;
-}
-
-.activiteCarte .carte{
-    width:21%;
-    margin:0;
-}
-.activiteCarte img{
-    height:250px;
-}
-
-.activiteCarte figure{
     margin:0;
 }
 
-.activiteCarte figcaption{
-    margin:2% auto;
+div.cards.cardActivite{
+   justify-content: space-between; 
 }
 
-.activiteCarte .imgG img {
+div.cards.cardActivite{
+    justify-content: space-between; 
+ }
+
+.cardActivite .card {
     height: 562px;
+    width: 410px;
+}
+ 
+.cardActivite img {
+    width: 100%;
+    height: 495px;
+}
+
+.cardActivite .fullImg {
+    height: 562px;
+    width: 410px;
 }
 
 
@@ -392,7 +283,7 @@ div.items.activiteCarte{
 
 .element {
     border-radius: 30px;
-    height: 287px;
+    height:auto;
     box-shadow: 0 2px 13px 0 #b1b1b1;
 }
 
@@ -438,35 +329,26 @@ footer h3{
         width: 100%;
         order:2;
         margin:0;
-    }
-
-    .itemHebergement .carte {
-        width: 38%;
+        border-radius: 0;
     }
 
     section.hebergement.section-2 {
         width: 100%;
         order:1;
         margin:0 0 2% 0;
+        border-radius: 0;
     }
 
-    .itemPopulaire .carte{
-        width:62%;
-        margin:5% auto;
-    }
-
-    .itemPopulaire figcaption{
+    div.card.cardAside{
         margin:2%;
     }
 
-    div.items.activiteCarte {
-        display: flex;
-        flex-wrap: wrap;
+    aside.cards{
+        flex-wrap: nowrap;
     }
 
-    .activiteCarte .carte {
-        width: 43%;
-        margin:3% 0;
+    section#hebergements{
+        padding:0;
     }
 }
 
@@ -510,34 +392,23 @@ footer h3{
         margin:0;
     }
 
-    div.hebergement{
-        border-radius:0;
-        margin:auto;
-    }
-
-    div.items.itemHebergement, aside.items.itemPopulaire, aside.items.itemPopulaire{
+    .cards, footer{
         flex-direction: column;
+        width:100%;
     }
 
-    .itemHebergement .carte{
-        width:90%;
+    div.card.cardHebergement{
+        width:100%;
     }
-    
-    .itemPopulaire .carte {
-        margin: 2% auto;
-    }
-
-    .activiteCarte .carte{
-        width:90%;
+    .section-1{
+        background-color: white;
     }
 
-    .activiteCarte .imgG img {
-        height: 250px;
+    .card{
+        margin: 3% 0;
     }
 
-    footer{
-        flex-direction: column;
+    div.card.cardAside{
+        margin:3% 0;
     }
-
-
 }

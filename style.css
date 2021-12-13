@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+body,.item-2 ul, div.flt h2, section.hebergement, .card figure, figcaption h2, section#activites{
     margin:0;
 }
 
@@ -18,23 +18,38 @@ a:hover{
     color:#0068fc;
 }
 
+header, section#hebergements, section.recherche{
+    margin:0 2%;}
+
 h1{
     padding-left:2%;
+}
+
+.element-flex{
+    display: flex;
+}
+
+header, #hebergements, section.hebergement.section-2 h1, div.card.littleImg{
+    justify-content: space-between;
+}
+
+.img-rounded{
+    border-radius:26px 26px 0 0;
+}
+
+.border-rounded{
+    border-radius: 30px;
+}
+
+.border-shadow{
+    box-shadow: 0 2px 13px 0 #b1b1b1;
 }
 
 /*****************************HEADER*************************************/
 
 header{
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    border:1px solid;
-}
-
-.item-2 ul{
-    display: flex;
-    margin:0;
 }
 
 .item-2 li{
@@ -53,7 +68,6 @@ p.item-3{
 /*****************************SECTION SEARCH*************************************/
 
 form{
-    display: flex;
     width:17%;
     margin-bottom: 1%;
 }
@@ -64,15 +78,15 @@ form{
 }
 
 i.fas.fa-map-marker-alt.formulaire{
-border-radius:15px 0 0 15px;
-background-color: #f2f2f2;
+    border-radius:15px 0 0 15px;
+    background-color: #f2f2f2;
 }
 
 input[type="button"]{
-border-radius: 0 15px 15px 0;
-color:white;
-background-color: #0068fc;
-border:#0068fc;
+    border-radius: 0 15px 15px 0;
+    color:white;
+    background-color: #0068fc;
+    border:#0068fc;
 }
 
 input{
@@ -89,7 +103,6 @@ i.fas.fa-search.formulaire{
 }
 
 div.filtres, div.flt{
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -104,7 +117,6 @@ div.flt{
 }
 
 div.flt h2{
-    margin:0;
     padding:0 10px;
 }
 
@@ -117,14 +129,6 @@ div.flt i{
     margin-left:-3px;
 }
 
-i.fas.fa-child{
-    padding:12px 14px
-}
-
-i.fas.fa-child:hover{
-    padding:12px 14px
-}
-
 div.flt i:hover{
     border:#DEEBFF 1px solid;
     border-radius: 25px;
@@ -134,6 +138,14 @@ div.flt i:hover{
     margin-left:-3px;
 }
 
+i.fas.fa-child{
+    padding:12px 14px
+}
+
+i.fas.fa-child:hover{
+    padding:12px 14px
+}
+
 i.fas.fa-info{
     border:1px solid #f2f2f2;
     border-radius: 20px;
@@ -141,39 +153,22 @@ i.fas.fa-info{
     color:#0068fc;
 }
 
-/******************************************************************************/
-header, section#hebergements, section.recherche{
-    margin:0 2%;}
-
 /*****************************************************************************/
-
-#hebergements{
-    display: flex;
-    justify-content: space-between;
-}
 
 section.hebergement{
     background-color: #f2f2f2;
-    border-radius: 30px;
-    margin:0;
     padding:0;
 }
 
 .cards{
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .card{
-    border-radius:30px;
-    box-shadow: 0 3px 8px 0 grey;
     margin:2%;
+    padding:5px;
     background-color: white;
-}
-
-.card figure{
-    margin:0;
 }
 
 section img{
@@ -186,34 +181,19 @@ div.card.cardHebergement{
     width:29%;
 }
 
-.cardHebergement img{
-    padding:1.5%;
-}
-
-.img-rounded{
-    border-radius:30px 30px 0 0;
-}
-
 div.card.cardAside{
     width:100%;
     margin:5%;
 }
 
 section.hebergement.section-2 h1{
-    display: flex;
-    justify-content: space-between;
     padding:0 6% 0 6%;
 }
 
-div.cardAside a{
-    display: flex;
-}
-
 div.cardAside img{
-    border-radius:30px 0 0 30px;
     width:36%;
     height: 210px;
-    padding:1.5%;
+    border-radius:26px 0 0 26px;
 }
 
 p.more{
@@ -233,10 +213,6 @@ figcaption{
     padding: 0 0 5% 5%;
 }
 
-figcaption h2{
-    margin:0;
-}
-
 span.prix{
     font-weight: bold;
 }
@@ -249,55 +225,26 @@ i.fas.fa-star.icon{
     color:#f2f2f2
 }
 /*****************************************************************************/
-section#activites{
-    margin:0;
+div.cardActivite{
+    flex-wrap: nowrap;
 }
-
-div.cards.cardActivite{
-   justify-content: space-between; 
-}
-
-div.cards.cardActivite{
-    justify-content: space-between; 
- }
-
 .cardActivite .card {
     height: 562px;
     width: 410px;
-}
- 
-.cardActivite img {
-    width: 100%;
-    height: 495px;
+    padding:0;
 }
 
-.cardActivite .fullImg {
-    height: 562px;
-    width: 410px;
-}
-
-
-#cartes{
-    box-shadow: none;
-}
-
-.element {
-    border-radius: 30px;
-    height:auto;
-    box-shadow: 0 2px 13px 0 #b1b1b1;
+div.card.littleImg{
+    flex-direction: column;
 }
 
 .element img {
+    width:100%;
     height: 216px;
-}
-
-.elements {
-    margin-top: 54px;
 }
 /***********************************************************************************/
 
 footer{
-    display: flex;
     background-color: #f2f2f2;
 }
 
@@ -309,10 +256,6 @@ footer div{
     width:100%
 }
 
-footer li{
-    list-style: none;
-}
-
 footer h3{
     padding-left:39px;
 }
@@ -322,33 +265,37 @@ footer h3{
     body{
         background-color: rgb(181, 218, 205);
     }
+
     section#hebergements{
         flex-direction: column;
-    }
-    section.hebergement.section-1 {
-        width: 100%;
-        order:2;
         margin:0;
+        padding: 0;
+    }
+
+    section.hebergement{
+        width:100%;
         border-radius: 0;
     }
 
+    section.hebergement.section-1 {
+        order:2;
+        margin:0;
+    }
+
     section.hebergement.section-2 {
-        width: 100%;
         order:1;
-        margin:0 0 2% 0;
-        border-radius: 0;
+        margin:0 0 3% 0;
     }
 
     div.card.cardAside{
         margin:2%;
     }
 
-    aside.cards{
+    aside.cards {
         flex-wrap: nowrap;
     }
-
-    section#hebergements{
-        padding:0;
+    div.cards.cardActivite{
+        flex-wrap: wrap;
     }
 }
 
@@ -388,6 +335,14 @@ footer h3{
         display: flex;
     }
 
+    .filtres h1{
+        width:100%;
+    }
+
+    .flt{
+        margin:2%;
+    }
+
     section#hebergements{
         margin:0;
     }
@@ -405,10 +360,10 @@ footer h3{
     }
 
     .card{
-        margin: 3% 0;
+        margin: 3% auto;
     }
 
-    div.card.cardAside{
-        margin:3% 0;
-    }
+    /*div.card.cardAside{
+        margin:3% auto;
+    }*/
 }

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body,.item-2 ul, div.flt h2, section.hebergement, .card figure, figcaption h2, section#activites{
+body,.item-2 ul, div.flt h2, .card figure, figcaption h2{
     margin:0;
 }
 
@@ -52,14 +52,19 @@ header{
     align-items: center;
 }
 
-.item-2 li{
+table td{
+    border:1px solid;
+    padding:15px 0;
+}
+
+/*.item-2 li{
     padding:53px 28px;
 }
 
 .item-2 li:hover{
     border-top:1px solid #0068fc;
     padding:53px 28px;
-}
+}*/
 
 p.item-3{
     width:100%;
@@ -157,16 +162,17 @@ i.fas.fa-info{
 
 section.hebergement{
     background-color: #f2f2f2;
-    padding:1%;
-    margin-bottom:2%
+    padding:2%;
+    margin:2% 0;
 }
 
 .cards{
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
-    margin:2%;
+    margin:2% 0;
     padding:5px;
     background-color: white;
 }
@@ -178,7 +184,7 @@ section img{
 }
 
 div.card.cardHebergement{
-    width:29%;
+    width:30%;
 }
 
 div.card.cardAside{
@@ -187,7 +193,7 @@ div.card.cardAside{
 }
 
 section.hebergement.section-2 h1{
-    padding:0 6% 0 6%;
+    padding:0 6%;
 }
 
 div.cardAside img{
@@ -225,6 +231,13 @@ i.fas.fa-star.icon{
     color:#f2f2f2
 }
 /*****************************************************************************/
+section#activites{
+    margin-bottom:2%;
+}
+
+section#activites h1{
+    margin-bottom: 0;
+}
 div.cardActivite{
     flex-wrap: nowrap;
 }
@@ -232,6 +245,7 @@ div.cardActivite{
     height: 562px;
     width: 410px;
     padding:0;
+    margin-top: 1%;
 }
 
 div.card.fullImg img{
@@ -253,6 +267,7 @@ div.card.littleImg{
 
 footer{
     background-color: #f2f2f2;
+    padding-top:1%;
 }
 
 footer nav{
@@ -303,6 +318,7 @@ footer h3{
     }
     div.cards.cardActivite{
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -325,7 +341,7 @@ footer h3{
     
     .item-2 li:hover{
         border-top:none;
-        border-bottom:1px solid #0068fc;
+        border-bottom:2px solid #0068fc;
         padding:0 28px;
     }
 

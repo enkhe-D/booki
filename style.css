@@ -211,11 +211,6 @@ figure{
     width:30%;
 }
 
-/*.cardHebergement img{
-    height:160px
-}*/
-
-
 aside.cards{
     width:30%;
     flex-direction: column;
@@ -229,7 +224,6 @@ div.cardAside{
 
 .cardAside img {
     max-width: 38%;
-  /*  height: 189px;*/
     object-fit: cover;
     border-radius: 30px 0 0 30px;
 }
@@ -247,7 +241,7 @@ aside.cards h1{
     margin-left:3%;
 }
 
-.cards h2, figcaption p{
+#hebergement figcaption h2, #hebergement figcaption p{
     margin:0;
 }
 
@@ -296,7 +290,10 @@ div.card.fullImg img {
 
 div.card.littleImg{
     flex-direction: column;
-    justify-content: space-between;
+}
+
+div.element img{
+    height:236px;
 }
 
 .element img {
@@ -327,9 +324,7 @@ footer h3{
 /***********************************************/
 
 @media screen and (max-width:992px){
-    body{
-        background-color: rgb(181, 218, 205);
-    }
+   
 
     section#hebergements{
         flex-direction: column;
@@ -369,10 +364,7 @@ footer h3{
 }
 
 @media screen and (max-width:768px){
-    body{
-        background-color: rgb(224, 193, 193);
-    }
-
+   
     header, .cards, footer{
         flex-direction: column;
     }

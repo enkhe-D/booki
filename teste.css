@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Shrikhand&display=swap');
 *{
-    font-family: 'Raleway', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
     box-sizing: border-box;
+    color: black;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -13,10 +11,6 @@ body{
 
 a:hover{
     color:#0068fc;
-}
-
-h1{
-    padding-left:3%;
 }
 
 .img-rounded{
@@ -39,15 +33,13 @@ section{
     margin:25px;
 }
 
-
-/*****************************HEADER*************************************/
-
 header{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     margin:0 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
 table{
     border-spacing: 0;
 }
@@ -65,7 +57,14 @@ p.item-3{
     width:100%;
 }
 
-/*****************************SECTION SEARCH*************************************/
+.item-3{
+    width:100%;
+}
+
+/**************************************************************************/
+section.recherche{
+    margin: 0 25px 25px 25px;
+}
 
 .formulaire{
     padding:15px;
@@ -96,7 +95,6 @@ i.fas.fa-search.formulaire{
     left:-13px;
     display: none;
 }
-
 div.filtres, div.flt{
     align-items: center;
     flex-wrap: wrap;
@@ -159,7 +157,6 @@ i.fas.fa-info{
     color:#0068fc;
 }
 
-/*****************************************************************************/
 #hebergements{
     flex-wrap: wrap;
     justify-content: space-between;
@@ -172,7 +169,7 @@ i.fas.fa-info{
 }
 
 .card{
-    margin:2% auto;
+    
     padding:5px;
     background-color: white;
 }
@@ -184,15 +181,14 @@ figure{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width:68%;
-    padding:1%;
     background-color: #f2f2f2;
+    padding:25px;
 }
 
 .cards h1{
     width:100%;
-    display: flex;
-    margin-bottom: 0;
     justify-content:space-between;
 }
 
@@ -203,7 +199,8 @@ figure{
 }
 
 .cardHebergement{
-    width:30%;
+    width:32%;
+    margin:12px 0;
 }
 
 aside.cards{
@@ -214,7 +211,7 @@ aside.cards{
 
 div.cardAside{
     width:100%;
-    margin:5% 0;
+    
 }
 
 .cardAside img {
@@ -255,9 +252,12 @@ i.fas.fa-star{
 i.fas.fa-star.icon{
     color:#f2f2f2
 }
-/*****************************************************************************/
+
+/********************************************************************/
+
 section#activites{
     flex-direction: column;
+    margin: 25px 25px 50px 25px;
 }
 
 section#activites h1{
@@ -320,11 +320,10 @@ div.element-3 img, div.element-4 img{
 .cardActivite figcaption {
     padding: 0% 3%;
 }
-/***********************************************************************************/
 
 footer{
     background-color: #f2f2f2;
-    padding-top:1%;
+    padding-top:25px;
 }
 
 footer nav{
@@ -338,10 +337,17 @@ footer div{
 footer h3{
     padding-left:39px;
 }
-/***********************************************/
+
+/*************************************************************************/
 
 @media screen and (max-width:992px){
-   
+   body{
+       background-color: rgb(183, 183, 233);
+   }
+
+   section.recherche{
+       margin:25px 25px 0 25px;
+   }
 
     section#hebergements{
         flex-direction: column;
@@ -354,23 +360,33 @@ footer h3{
         border-radius:0;
     }
 
-    aside.cards{
-        order:1;
-        flex-wrap: nowrap;
-        border-radius: 0;
-        width: 100%;
-        margin-bottom:2%;
+    .cardHebergement {
+        width: 48%;
+        margin: 12px 0;
     }
 
+    aside.cards {
+        order: 1;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 25px;
+    }
+    
     div.card.cardAside{
-       margin:2% auto;
-        width:50%;
+        margin:2% auto;
+        width:52%;
         padding:0.5%;
     }
 
     div.cards.cardActivite{
         flex-wrap: wrap;
         background-color: white;
+    }
+
+    .cardActivite .card {
+        width: 48%;
+        padding: 0;
+        margin: 25px 0px;
     }
 }
 
@@ -434,7 +450,7 @@ footer h3{
     }
 
     .flt{
-        margin:2%;
+        margin:2% 0;
     }
 
    section#hebergements{
@@ -448,19 +464,17 @@ footer h3{
         width:100%;
     }
 
+    .cardHebergement img, div.cardActivite img, div.card.fullImg img {
+        width: 100%;
+        height: 113px;
+        object-fit: cover;
+    }
+
     div.card.cardAside{
         width:100%;
     }
 
-   /* div.cards.cardActivite{
-        padding:3%;
-    }*/
-
     .cardActivite .card {
         width: 100%;
-    }
-
-    div.card.fullImg img{
-        height:180px;
     }
 }

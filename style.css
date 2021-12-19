@@ -3,7 +3,6 @@
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
     text-decoration: none;
-    color: black;
     box-sizing: border-box;
 }
 
@@ -11,20 +10,20 @@ body{
     margin:0;
 }
 
+a{
+    color: black;
+}
+
 a:hover{
     color:#0068fc;
 }
 
-h1{
-    padding-left:3%;
-}
-
 .img-rounded{
-    border-radius:26px 26px 0 0;
+    border-radius:19px 19px 0 0;
 }
 
 .border-rounded{
-    border-radius: 30px;
+    border-radius: 23px;
 }
 
 .border-shadow{
@@ -35,37 +34,40 @@ h1{
     display: flex;
 }
 
-section{
-    margin:25px;
-}
+/*section{
+    margin:35px;
+}*/
 
-
-/*****************************HEADER*************************************/
+/*****************************************************************************/
 
 header{
-    flex-wrap: wrap;
+    margin:0 35px;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    margin:0 25px;
 }
+
 table{
     border-spacing: 0;
 }
 
 table td{
-    padding:53px 15px;
+    padding:54px 15px;
 }
 
 table td:hover{
     border-top:1px solid #0068fc;
-    padding:53px 15px;
+    padding:54px 15px;
 }
 
 p.item-3{
     width:100%;
+    line-height: 1.5;
 }
-
-/*****************************SECTION SEARCH*************************************/
+/**************************************************************************/
+section.recherche{
+    margin: 0 35px;
+}
 
 .formulaire{
     padding:15px;
@@ -90,16 +92,17 @@ input{
 
 i.fas.fa-search.formulaire{
     border-radius: 15px;
+    border:1px solid #0068fc;
     background-color: #0068fc;
     color:white;
     position: relative;
     left:-13px;
     display: none;
 }
-
 div.filtres, div.flt{
     align-items: center;
     flex-wrap: wrap;
+    margin:15px 0;
 }
 
 div.filtres h1{
@@ -159,68 +162,68 @@ i.fas.fa-info{
     color:#0068fc;
 }
 
-/*****************************************************************************/
+/*****************************************************/
+
 #hebergements{
     flex-wrap: wrap;
     justify-content: space-between;
+    margin:35px;
 }
 
-.card img{
-    width: 100%;
-    height:160px;
-    object-fit: cover;
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:71%;
+    background-color: #f2f2f2;
+    padding:35px;
+}
+
+.cards h1{
+    width:100%;
+    justify-content:space-between;
 }
 
 .card{
-    margin:2% auto;
     padding:5px;
     background-color: white;
+}
+
+.cardHebergement{
+    width:31%;
+    margin:20px 0;
 }
 
 figure{
     margin:0
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    width:68%;
-    padding:1%;
-    background-color: #f2f2f2;
-}
-
-.cards h1{
-    width:100%;
-    display: flex;
-    margin-bottom: 0;
-    justify-content:space-between;
+.card img{
+    width: 100%;
+    height:173px;
+    object-fit: cover;
 }
 
 .more{
     font-weight: bold;
     width: 100%;
-    margin-left: 2%;
+    margin:35px 0;
 }
-
-.cardHebergement{
-    width:30%;
-}
-
+/************************************************/
 aside.cards{
-    width:30%;
-    flex-direction: column;
-    padding:2%;
+    width:27%;
+    padding:35px;
 }
 
-div.cardAside{
-    width:100%;
-    margin:5% 0;
+div.card.cardAside{
+    margin:35px 0
+    
 }
 
 .cardAside img {
-    max-width: 38%;
+    width: 41%;
+    height:180px;
     object-fit: cover;
-    border-radius: 30px 0 0 30px;
+    border-radius: 19px 0 0 19px;
 }
 
 .cardAside figure{
@@ -228,7 +231,6 @@ div.cardAside{
 }
 
 aside.cards h1{
-    margin: 0 0 3.5% 0;
     font-size: x-large;
 }
 
@@ -255,9 +257,12 @@ i.fas.fa-star{
 i.fas.fa-star.icon{
     color:#f2f2f2
 }
-/*****************************************************************************/
+
+/********************************************************************/
+
 section#activites{
     flex-direction: column;
+    margin: 35px 35px 50px 35px;
 }
 
 section#activites h1{
@@ -289,14 +294,6 @@ div.card.littleImg{
     flex-direction: column;
 }
 
-div.element img{
-    height:236px;
-}
-
-.element img {
-    width: 100%;
-}
-
 div.element-1 img{
     height:263px;
 }
@@ -305,11 +302,12 @@ div.element-2 img{
     height:160px;
 }
 
-.element-2{
+div.element-2{
     margin-top:50px;
 }
 
-div.element-3 img, div.element-4 img{
+div.element-3 img,
+div.element-4 img{
     height:210px;
 }
 
@@ -317,14 +315,11 @@ div.element-3 img, div.element-4 img{
     margin-top:53px;
 }
 
-.cardActivite figcaption {
-    padding: 0% 3%;
-}
-/***********************************************************************************/
+/******************************************************************************/
 
 footer{
     background-color: #f2f2f2;
-    padding-top:1%;
+    padding-top:25px;
 }
 
 footer nav{
@@ -338,49 +333,66 @@ footer div{
 footer h3{
     padding-left:39px;
 }
-/***********************************************/
+
+/*************************************************************************/
 
 @media screen and (max-width:992px){
-   
-
-    section#hebergements{
-        flex-direction: column;
-        margin:0;
-    }
+   body{
+       background-color: rgb(183, 183, 233);
+   }
 
     div.cards{
         order:2;
         width:100%;
-        border-radius:0;
     }
 
-    aside.cards{
-        order:1;
-        flex-wrap: nowrap;
-        border-radius: 0;
+    .cardHebergement {
+        width: 48%;
+        margin: 12px 0;
+    }
+
+    aside.cards {
+        order: 1;
         width: 100%;
-        margin-bottom:2%;
+        margin-bottom: 35px;
     }
-
+    
     div.card.cardAside{
-       margin:2% auto;
-        width:50%;
-        padding:0.5%;
+        margin:2% auto;
+        width:70%;
     }
 
     div.cards.cardActivite{
         flex-wrap: wrap;
         background-color: white;
     }
+
+    .cardActivite .card {
+        width: 48%;
+        padding: 0;
+        margin: 11px 0px;
+    }
+
+    div.element-2,
+    div.element-4{
+        margin-top:23px;
+    }
+
+    div.element-2 img{
+        height: 188px;
+    }
+
+    div.element-4 img{
+        height: 240px;
+    }
 }
 
 @media screen and (max-width:768px){
-   
-    header, .cards, footer{
-        flex-direction: column;
-    }
-
-    header, .filtres h1, div.cardActivite, footer{
+    
+    header, 
+    .filtres h1, 
+    div.cardActivite, 
+    footer{
         width:100%;
     }
 
@@ -399,7 +411,7 @@ footer h3{
     }
 
     .item-3{
-        margin:2%;
+        margin:20px;;
     }
 
     table{
@@ -407,60 +419,68 @@ footer h3{
     }
 
     table td{
-        padding: 5px 11%;
+        padding: 0 16%;
     }
     
     table td:hover{
         border-top:none;
         border-bottom: 2px solid #0068fc;
-        padding: 5px 16%;
+        padding: 0 16%;
+    }
+
+    /************************************************/
+    section.recherche{
+        margin:20px;
     }
 
     input[type="button"]{
-        border-radius: 0 15px 15px 0;
-        color:white;
-        background-color: #0068fc;
         display: none;
-        }
+    }
         
     i.fas.fa-search.formulaire{
-        border-radius: 15px;
-        background-color: #0068fc;
-        border:1px solid #0068fc;
-        color:white;
-        position: relative;
-        left:-13px;
         display: flex;
     }
 
-    .flt{
-        margin:2%;
+    section#hebergements{
+        margin:35px 0;
     }
 
-   section#hebergements{
-        margin:0;
+    .cards{
+        border-radius: 0;
     }
 
     div.cards{
         background-color: white;
+        padding:20px;
     }
-    .cardHebergement{
+
+    aside.cards{
+        margin-bottom: 0;
+        padding:20px;
+    }
+
+    .cardHebergement,
+    div.card.cardAside, 
+    .cardActivite .card{
         width:100%;
+    }
+    
+    .cardHebergement img,
+     div.cardActivite img, 
+     div.card.fullImg img {
+        height: 113px;
+        object-fit: cover;
     }
 
     div.card.cardAside{
-        width:100%;
+        margin:20px auto;
     }
 
-   /* div.cards.cardActivite{
-        padding:3%;
-    }*/
-
-    .cardActivite .card {
-        width: 100%;
+    section#activites {
+        margin: 20px 20px 50px;
     }
 
-    div.card.fullImg img{
-        height:180px;
+    footer{
+        flex-direction: column;
     }
 }

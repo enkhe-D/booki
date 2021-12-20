@@ -34,10 +34,6 @@ a:hover{
     display: flex;
 }
 
-/*section{
-    margin:35px;
-}*/
-
 /*****************************************************************************/
 
 header{
@@ -57,7 +53,7 @@ table td{
 
 table td:hover{
     border-top:1px solid #0068fc;
-    padding:54px 15px;
+    padding:53px 15px;
 }
 
 p.item-3{
@@ -99,7 +95,7 @@ i.fas.fa-search.formulaire{
     left:-13px;
     display: none;
 }
-div.filtres, div.flt{
+div.filtres{
     align-items: center;
     flex-wrap: wrap;
     margin:15px 0;
@@ -110,10 +106,10 @@ div.filtres h1{
 }
 
 div.flt{
-    border:1px solid #f2f2f2;
+    align-items: center;
+    border:2px solid #f2f2f2;
     margin-left:2%;
     border-radius:22px;
-    flex-wrap: nowrap;
 }
 
 div.flt h2{
@@ -173,7 +169,7 @@ i.fas.fa-info{
 .cards{
     flex-wrap: wrap;
     justify-content: space-between;
-    width:71%;
+    width:68%;
     background-color: #f2f2f2;
     padding:35px;
 }
@@ -188,19 +184,22 @@ i.fas.fa-info{
     background-color: white;
 }
 
-.cardHebergement{
-    width:31%;
-    margin:20px 0;
-}
-
 figure{
     margin:0
 }
 
 .card img{
     width: 100%;
-    height:173px;
     object-fit: cover;
+}
+
+.cardHebergement{
+    width:31%;
+    margin:20px 0;
+}
+
+.cardHebergement img{
+    height:173px;
 }
 
 .more{
@@ -208,22 +207,24 @@ figure{
     width: 100%;
     margin:35px 0;
 }
-/************************************************/
+
 aside.cards{
-    width:27%;
+    width:30%;
     padding:35px;
 }
 
 div.card.cardAside{
     margin:35px 0
-    
 }
 
 .cardAside img {
-    width: 41%;
-    height:180px;
+    max-width: 41%;
     object-fit: cover;
     border-radius: 19px 0 0 19px;
+}
+
+.cardAside .imgHeight {
+    height: 209px;;
 }
 
 .cardAside figure{
@@ -235,7 +236,7 @@ aside.cards h1{
 }
 
 .cards figcaption{
-    margin-left:3%;
+    margin:3% 4% 0 4%;
 }
 
 figcaption h2, .cards figcaption p{
@@ -244,6 +245,10 @@ figcaption h2, .cards figcaption p{
 
 figcaption p{
     line-height: 2;
+}
+
+aside p.etoile {
+    margin-top: 29%;
 }
 
 span.prix{
@@ -337,10 +342,7 @@ footer h3{
 /*************************************************************************/
 
 @media screen and (max-width:992px){
-   body{
-       background-color: rgb(183, 183, 233);
-   }
-
+ 
     div.cards{
         order:2;
         width:100%;
@@ -373,9 +375,15 @@ footer h3{
         margin: 11px 0px;
     }
 
+    .cardAside .imgHeight {
+        width: 41%;
+        height: auto;
+        max-height: 204px;
+    }
+
     div.element-2,
     div.element-4{
-        margin-top:23px;
+        margin-top:20px;
     }
 
     div.element-2 img{
@@ -401,13 +409,16 @@ footer h3{
         align-items:flex-start;
     }
 
+    .item-1 img{
+        width:57%;
+    }
+
     nav.item-2{
-        border-bottom: 2px solid #f2f2f2;
         width:100%;
     }
 
     .item-1{
-        margin:auto;
+        margin-left:47%;
     }
 
     .item-3{
@@ -419,20 +430,23 @@ footer h3{
     }
 
     table td{
-        padding: 0 16%;
+        padding: 0 16% 2%;
+        border-bottom: 2px solid #f2f2f2;
     }
     
     table td:hover{
         border-top:none;
+        padding: 0 16% 2%;
         border-bottom: 2px solid #0068fc;
-        padding: 0 16%;
     }
-
     /************************************************/
     section.recherche{
         margin:20px;
     }
 
+    div.filtres h1{
+        margin-bottom: 0;
+    }
     input[type="button"]{
         display: none;
     }

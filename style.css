@@ -34,7 +34,7 @@ a:hover{
     display: flex;
 }
 
-/*****************************************************************************/
+/*******************HEADER**************************/
 
 header{
     margin:0 35px;
@@ -56,11 +56,16 @@ table td:hover{
     padding:53px 15px;
 }
 
-p.item-3{
+div.item-3{
     width:100%;
-    line-height: 1.5;
+    margin-bottom: 0;
 }
-/**************************************************************************/
+
+strong{
+    font-size: 1.7em;
+}
+/*******************FORM**************************/
+
 section.recherche{
     margin: 0 35px;
 }
@@ -95,6 +100,7 @@ i.fas.fa-search.formulaire{
     left:-13px;
     display: none;
 }
+
 div.filtres{
     align-items: center;
     flex-wrap: wrap;
@@ -158,7 +164,7 @@ i.fas.fa-info{
     color:#0068fc;
 }
 
-/*****************************************************/
+/*******************HEBERGEMENTS**************************/
 
 #hebergements{
     flex-wrap: wrap;
@@ -208,9 +214,15 @@ figure{
     margin:35px 0;
 }
 
+/*******************ASIDE**************************/
+
 aside.cards{
     width:30%;
     padding:35px;
+}
+
+aside h1{
+    font-size: x-large;
 }
 
 div.card.cardAside{
@@ -231,15 +243,12 @@ div.card.cardAside{
     display: flex;
 }
 
-aside.cards h1{
-    font-size: x-large;
-}
-
 .cards figcaption{
     margin:3% 4% 0 4%;
 }
 
-figcaption h2, .cards figcaption p{
+figcaption h2, 
+.cards figcaption p{
     margin:0;
 }
 
@@ -263,7 +272,7 @@ i.fas.fa-star.icon{
     color:#f2f2f2
 }
 
-/********************************************************************/
+/*******************ACTIVITES**************************/
 
 section#activites{
     flex-direction: column;
@@ -273,6 +282,7 @@ section#activites{
 section#activites h1{
     padding-left: 0;
 }
+
 div.cards.cardActivite {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -287,7 +297,8 @@ div.cards.cardActivite {
     margin:0;
 }
 
-.cardActivite figcaption h2, .cardActivite figcaption p{
+.cardActivite figcaption h2, 
+.cardActivite figcaption p{
     margin:4% 0;
 }
 
@@ -320,7 +331,7 @@ div.element-4 img{
     margin-top:53px;
 }
 
-/******************************************************************************/
+/*******************FOOTER**************************/
 
 footer{
     background-color: #f2f2f2;
@@ -339,7 +350,7 @@ footer h3{
     padding-left:39px;
 }
 
-/*************************************************************************/
+/*******************MEDIA QUERIES **************************/
 
 @media screen and (max-width:992px){
  
@@ -418,7 +429,7 @@ footer h3{
     }
 
     .item-1{
-        margin-left:47%;
+        margin-left:41%;
     }
 
     .item-3{
@@ -430,13 +441,13 @@ footer h3{
     }
 
     table td{
-        padding: 0 16% 2%;
+        padding: 0 10% 2%;
         border-bottom: 2px solid #f2f2f2;
     }
     
     table td:hover{
         border-top:none;
-        padding: 0 16% 2%;
+        padding: 0 10% 2%;
         border-bottom: 2px solid #0068fc;
     }
     /************************************************/
@@ -446,6 +457,10 @@ footer h3{
 
     div.filtres h1{
         margin-bottom: 0;
+    }
+
+    div.flt{
+        margin:2%;
     }
     input[type="button"]{
         display: none;

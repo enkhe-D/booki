@@ -30,6 +30,10 @@ a:hover{
     box-shadow: 0 2px 13px 0 #b1b1b1;
 }
 
+.border-shadow:hover{
+    box-shadow: 0 2px 13px 0 #0068fc;
+}
+
 .element-flex{
     display: flex;
 }
@@ -204,6 +208,11 @@ figure{
     margin:20px 0;
 }
 
+.cardHebergement:hover{
+    width:33%;
+    margin:20px 0;
+}
+
 .cardHebergement img{
     height:173px;
 }
@@ -227,6 +236,11 @@ aside h1{
 
 div.card.cardAside{
     margin:35px 0
+}
+
+div.card.cardAside:hover{
+    margin:35px 0;
+    width:101%;
 }
 
 .cardAside img {
@@ -293,6 +307,12 @@ div.cards.cardActivite {
 
 .cardActivite .card {
     width: 23%;
+    padding:0;
+    margin:0;
+}
+
+.cardActivite .card:hover {
+    width: 24%;
     padding:0;
     margin:0;
 }
@@ -364,6 +384,11 @@ footer h3{
         margin: 12px 0;
     }
 
+    .cardHebergement:hover {
+        width: 49%;
+        margin: 12px 0;
+    }
+
     aside.cards {
         order: 1;
         width: 100%;
@@ -373,6 +398,16 @@ footer h3{
     div.card.cardAside{
         margin:2% auto;
         width:70%;
+    }
+
+    div.card.cardAside:hover{
+        margin:2% auto;
+        width:71%;
+    }
+
+    .cardAside .imgHeight {
+        width: 43%;
+        height: 216px;
     }
 
     div.cards.cardActivite{
@@ -386,10 +421,10 @@ footer h3{
         margin: 11px 0px;
     }
 
-    .cardAside .imgHeight {
-        width: 41%;
-        height: auto;
-        max-height: 204px;
+    .cardActivite .card:hover {
+        width: 49%;
+        padding: 0;
+        margin: 11px 0px;
     }
 
     div.element-2,
@@ -451,9 +486,13 @@ footer h3{
         padding: 0 10% 2%;
         border-bottom: 2px solid #0068fc;
     }
-    /************************************************/
+
     section.recherche{
         margin:20px;
+    }
+
+    input.formulaire{
+        width:100%;
     }
 
     div.filtres h1{
@@ -472,7 +511,7 @@ footer h3{
     }
 
     section#hebergements{
-        margin:35px 0;
+        margin:35px 0 0;
     }
 
     .cards{
@@ -494,6 +533,12 @@ footer h3{
     .cardActivite .card{
         width:100%;
     }
+
+    .cardHebergement:hover,
+    div.card.cardAside:hover, 
+    .cardActivite .card:hover{
+        width:100%;
+    }
     
     .cardHebergement img,
      div.cardActivite img, 
@@ -506,8 +551,21 @@ footer h3{
         margin:20px auto;
     }
 
+    .cardAside .imgHeight {
+        height: 146px;
+        width:48%;
+    }
+
+    .cardHebergement figcaption{
+        margin: 0 4%;
+    }
+
+    figcaption{
+        font-size: 0.7em;
+    }
+
     section#activites {
-        margin: 20px 20px 50px;
+        margin: 0px 20px 50px;
     }
 
     footer{
